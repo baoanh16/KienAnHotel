@@ -1,0 +1,105 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-7"
+            ],
+            "body": [
+                "boxes/b-9",
+                "boxes/b-16"
+            ],
+            "footer": [
+                "footer/f-2"
+            ]
+        },
+        "about": {
+            "body": [
+                "slider/s-1",
+                "carousel/c-4"
+            ]
+        },
+        "checkout-1": {
+            "body": [
+                "boxes/b-17"
+            ]
+        },
+        "checkout-2": {
+            "body": [
+                "boxes/b-17"
+            ]
+        },
+        "checkout-3": {
+            "body": [
+                "slider/s-1",
+                "breadcrumb/b-4",
+                "carousel/c-4"
+            ]
+        },
+        "checkout-4": {
+            "body": [
+                "boxes/b-17"
+            ]
+        },
+        "room": {
+            "body": [
+                "boxes/b-4"
+            ]
+        },
+        "room-details": {
+            "body": [
+                "shop-details/s-4"
+            ]
+        },
+        "service": {
+            "body": [
+                "boxes/b-9"
+            ]
+        },
+        "service-detail": {
+            "body": [
+                "news-details/n-1"
+            ]
+        },
+        "promotion": {
+            "body": [
+                "news/n-3"
+            ]
+        },
+        "promotion-detail": {
+            "body": [
+                "news-details/n-1"
+            ]
+        },
+        "support": {
+            "body": [
+                "boxes/b-11"
+            ]
+        },
+        "guide": {
+            "body": [
+                "boxes/b-15"
+            ]
+        },
+        "news": {
+            "body": [
+                "news/n-4"
+            ]
+        },
+        "news-detail": {
+            "body": [
+                "news-details/n-1"
+            ]
+        },
+        "gallery": {
+            "body": [
+                "gallery/g-4"
+            ]
+        },
+        "contact": {
+            "body": [
+                "form/f-1",
+                "map/m-1"
+            ]
+        }
+    }
+}
