@@ -7,117 +7,90 @@
 	+pad(0 0 2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(0 0 4rem 0)
-	.news-hot
-		.item
-			text-decoration: none
-			figure
-				position: relative
-				overflow: hidden
-				margin-bottom: 2rem
-				width: 100%
-				img
-					width: 100%
-				figcaption
-					padding-top: 1rem
-
-					h3
-						+fz(1.1rem)
-						+fw(600)
-						color: lighten(color-get($mau,main) ,30%)
-					time
-						+fz(.9rem)
-						+fw(200)
-						color: darken(color-get($mau,trang) ,30%)
-						i
-							margin-right: .25rem
-					p
-						color: darken(color-get($mau,trang) ,50%)
-						line-height: 1.3rem
-						+fz(1rem)
-						margin-bottom: 0
-			&:hover
-				figure
-					img
-						+opacity(.7)
-					figcaption
-						h3
-							color: darken(color-get($mau,extra),0%)
-						time
-							color: darken(color-get($mau,trang) ,20%)
-						p
-							color: darken(color-get($mau,trang) ,70%)
-
-		.top-list
+	.container
+		.box-all
+			+pad(1rem)
 			.item
+				figure
+					margin-bottom: 0
+					.img
+						position: relative
+						&.item-child
+							min-height: 450px
+					figcaption
+						.text
+							position: absolute
+							margin-top: -22rem
+							+lh(2.5)
+							+pad(1rem)
+							time
+								color: color-get($mau,xam-3)
+								+fz(1rem)
+								+fw(400)
+								padding-bottom: 2rem
+							h3
+								color: color-get($mau,trang)
+								+fz(1.1rem)
+								+fw(bold)
+							p 
+								color: color-get($mau,xam-3)
+								+fz(1.07rem)
+								line-height: 1.6rem
+							+media-breakpoint-up(md)
+								margin-top: -16rem
+							+media-breakpoint-up(lg)
+								margin-top: -8rem
+								+pad(0)
+								h3
+									+fz(1.3rem)
 				+media-breakpoint-up(lg)
 					figure
-						margin-bottom: 0
-
-	.news-list
-		.btn-group
-			.btn
-				+bor-rad(0)
-			i
-				padding-right: 5px
-		.list-group-wrapper
-			flex-direction: column
-			> div
-				-webkit-box-flex: 0
-				-webkit-flex: 0 0 100%
-				-ms-flex: 0 0 100%
-				flex: 0 0 100%
-				max-width: 100%
-				figure
-					display: block
-					+media-breakpoint-up(md)
-						+clearfix
-						img
-							max-width: 30%
-							float: left
+						position: relative
+						&:before
+							+pos(abs,12rem  null null 25rem 0 0 )
+							width: 100%
+							height: 100%
+							+opacity(0)
+							content: ''
+							background: darken(color-get($mau,den),0%)
+							+transition(all .5s ease-in-out)
+							z-index: 1
 						figcaption
-							max-width: 70%
-							float: left
-							padding-left: 1rem
-							padding-top: 0
+							width: 100%
+							height: 100%
+							overflow: hidden
+							+pos(abs, null null 0 0)
+							background: none
+							z-index: 100
+							+pad(1rem)
+							.text
+								+pos(abs,  100%)
+								+transition(all .5s ease-in-out)
+								width: 100%
+								h3
+									+fz(1.5rem)
+									padding-bottom: 3.5rem
+									max-width: calc(100% - 3rem)
+								time
+									max-width: calc(100% - 3rem)
+								p
+									max-width: calc(100% - 3rem)
 
-		.item
-			display: flex
-			text-decoration: none
-			height: 100%
-			overflow: hidden
-			figure
-				position: relative
-				overflow: hidden
-				margin-bottom: 2rem
-				width: 100%
-				img
-					width: 100%
-				figcaption
-					padding-top: 1rem
+					&:hover
+						figure
+							&:before
+								+opacity(.8)
+							figcaption
+								
+								.text
+									+pos(abs, 12rem null null 1rem)
+									h3
+										padding-bottom: 0
+										
+								span
+									+opacity(1)
+									transition-delay: .5s
+									&:before
+										transition-delay: .7s
+										width: 1000px
 
-					h3
-						+fz(1.1rem)
-						+fw(600)
-						color: lighten(color-get($mau,main) ,30%)
-					time
-						+fz(.9rem)
-						+fw(200)
-						color: darken(color-get($mau,trang) ,30%)
-						i
-							margin-right: .25rem
-					p
-						color: darken(color-get($mau,trang) ,50%)
-						line-height: 1.3rem
-						+fz(1rem)
-						margin-bottom: 0
-			&:hover
-				figure
-					img
-						+opacity(.7)
-					figcaption
-						h3
-							color: darken(color-get($mau,extra),0%)
-						time
-							color: darken(color-get($mau,trang) ,20%)
-						p
-							color: darken(color-get($mau,trang) ,70%)

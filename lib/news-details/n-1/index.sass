@@ -11,133 +11,130 @@
 		text-align: start
 		margin-bottom: 2rem
 		h1
-			+fz(1.5rem)
-			+fw(400)
-		hr
-			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
+			+fz(1.4rem)
+			+fw(600)
+			color: lighten(color-get($mau,main),8)
+			+pad(1rem 0 1.5rem 0)
 		p
 			+fz(1.1rem)
-			+fw(400)
+			+fw(500)
+			color: color-get($mau, xam-6)
 			&.lead
-				+fw(bold)
+				color: color-get($mau, xam-5)
+				+fw(500)
+		figure
+			+mar(1rem 0)
+			
+		strong 
+			+fz(1.1rem)
+			+fw(500)
+			color: color-get($mau, main)
+			+pad(null null 1rem null)
+			display: block
 		time
-			+fz(.9rem)
+			+fz(.93rem)
 			+fw(200)
-			color: darken(color-get($mau,trang) ,10%)
-		.item-news-read
-			text-decoration: none
-			figcaption
-				font-style: italic
-				color: darken(color-get($mau,trang) ,50%)
+			color: color-get($mau,xam-4)
+		.info
+			+pad(0 1rem 1rem 1rem)
+			position: relative
+			+lh(1.6)
+			&:before
+				content: ''
+				position: absolute
+				display: block
+				left: 0
+				top: 5px
+				background: color-get($mau,duong-3)
+				width: 5px
+				height: 50px
+			p
+				margin-bottom: 0
+				+fw(600)
 		.social-networks
 			.nav-item
 				margin-right: .5rem
 				&:last-child
 					margin-right: 0
-	.othernews
-		+bor-rad(5px)
-		overflow: hidden
-		width: 100%
-		hr
-			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
-		h2
-			color: color-get($mau,main)
-			+fz(1.4rem)
-			margin-bottom: 0
-		h3
-			color: color-get($mau,main)
-			+fz(1.4rem)
-			margin-bottom: 0
-		.lists
-			.item
-				display: flex
-				text-decoration: none
-				height: 100%
-				+bor-rad(5px)
-				overflow: hidden
-				&:last-child
-					figure
-						margin-bottom: 1rem
-				&:first-child
-					figure
-						margin-top: 1rem
-				figure
-					position: relative
-					overflow: hidden
-					+bor-rad(5px)
-					margin-bottom: 2rem
-					background: darken(color-get($mau,trang) ,3%)
-					img
-						+bor-rad(5px 5px 0 0)
-						width: 100%
-					figcaption
-						padding: 1rem
-
-						h3
-							+fz(1.1rem)
-							+fw(400)
-							color: color-get($mau,main)
-						time
-							+fz(.9rem)
-							+fw(200)
-							color: darken(color-get($mau,trang) ,30%)
-						p
-							color: darken(color-get($mau,trang) ,60%)
-							line-height: 1.3rem
-							+fz(1rem)
-							margin-bottom: 0
-				&:hover
-					figure
-						background: darken(color-get($mau,trang) ,7%)
-						img
-							+opacity(.7)
-						figcaption
-							h3
-								color: darken(color-get($mau,extra),0%)
-							time
-								color: darken(color-get($mau,trang) ,20%)
-							p
-								color: darken(color-get($mau,trang) ,70%)
-		+media-breakpoint-up(lg)
-			background: darken(color-get($mau,trang) ,4%)
+	.box-news
+		padding-right: 0
+		.othernews
+			overflow: hidden
+			width: 100%
 			hr
-				display: none
+				border-top: 1px dashed darken(color-get($mau,trang) ,10%)
 			h2
-				background: color-get($mau,main)
-				color: color-get($mau,trang)
-				+pad(1rem)
-				+bor-rad(5px 5px 0 0)
+				color: color-get($mau,xam-6)
+				+fz(1.4rem)
+				margin-bottom: 0
 			.lists
-				+pad(1rem)
 				.item
-					border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
-					margin-bottom: 1rem
+					display: flex
+					text-decoration: none
+					height: 100%
+					overflow: hidden
 					&:last-child
-						border-bottom: 0
-						margin-bottom: 0
-
+						figure
+							margin-bottom: 1rem
+					&:first-child
+						figure
+							margin-top: 1rem
 					figure
-						background: none
-						display: flex
-						align-items: flex-start
-						width: 100%
-						min-height: 80px
+						position: relative
+						overflow: hidden
 						margin-bottom: 1rem
-						.thumb
-							display: block
-							height: 100%
-							+pos(abs, 0 null null 0)
-							width: 30%
-							max-width: 30%
-							+bor-rad(5px)
-						img
-							display: none
 						figcaption
-							+pad(0 0 0 calc(30% + 1rem))
-							p
-								display: none
+							padding: 0 0 0 12px	
+							h3
+								+fz(1.1rem)
+								+fw(600)
+								color: color-get($mau,xam-6)
+							time
+								color: color-get($mau,xam-4)
+								padding-bottom: .4rem
+								display: block
+							// p
+							// 	color: color-get($mau,xam-5)
+							// 	line-height: 1.3rem
+							// 	+fz(1rem)
+							// 	margin-bottom: 0
 					&:hover
 						figure
-							background: none
-							.thumb
+							background: darken(color-get($mau,trang) ,7%)
+							img
 								+opacity(.7)
+							figcaption
+								h3
+									color: darken(color-get($mau,extra),0%)
+								time
+									color: darken(color-get($mau,trang) ,20%)
+								p
+									color: darken(color-get($mau,trang) ,70%)
+			+media-breakpoint-up(lg)
+				hr
+					display: none
+				h2
+					color: color-get($mau,xam-6)
+				.lists
+					.item
+						border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
+						margin-bottom: 1rem
+						&:last-child
+							border-bottom: 0
+							margin-bottom: 0
+
+						figure
+							background: none
+							display: flex
+							align-items: flex-start
+							width: 100%
+							min-height: 80px
+							margin-bottom: 1rem
+							figcaption
+								// p
+								// 	display: none
+						&:hover
+							figure
+								background: none
+								.thumb
+									+opacity(.7)
