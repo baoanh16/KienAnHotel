@@ -1,0 +1,59 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-faq-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.content
+		.info
+			border-top: 1px dashed color-get($mau, xam-5)
+			&:last-child
+				border-bottom: 1px dashed color-get($mau, xam-5)
+			.title
+				cursor: pointer
+				color: color-get($mau,trang)
+				text-transform: uppercase
+				+fz(1.4rem)
+				justify-content: space-between
+				align-items: center
+				+pad(.8rem 1.5rem .8rem 0)
+				&.active
+					h5
+						color: color-get($mau,main)
+						+fw(600)
+				h5
+					margin-bottom: 0
+					color: color-get($mau, xam-6)
+					+fw(500)
+					
+				.icon
+					width: 25px
+					height: 25px
+					margin-right: 1.5rem
+					color: color-get($mau,trang)
+					background: color-get($mau,duong-4)
+					text-align: center
+					+lh(25px)
+				&.active
+					i
+						transform: rotate(90deg)
+						transition: .5s all ease-in-out
+			.faq
+				margin-top: 1rem
+				.detail
+					display: flex
+					align-items: center
+					+pad(.3rem 0 .3rem 4.5rem)
+					
+					p
+						+fz(1.1rem)
+						max-width: 75%
+						+fw(600)
+						margin-bottom: 0
+						+media-breakpoint-up(md)
+							max-width: initial
+	
+		

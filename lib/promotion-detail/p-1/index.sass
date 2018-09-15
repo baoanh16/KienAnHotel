@@ -1,0 +1,148 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-promotion-details-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.news-read
+		text-align: start
+		margin-bottom: 1.5rem
+		h1
+			+fz(1.4rem)
+			+fw(600)
+			color: lighten(color-get($mau,main),8)
+			+pad(1rem 0)
+		p
+			+fz(1.1rem)
+			+fw(500)
+			color: color-get($mau, xam-6)
+			&.lead
+				+fw(600)
+		.item-news-read
+			figure
+				+mar(1rem 0)
+				display: flex
+				flex-wrap: wrap
+				text-align: center
+				justify-content: center
+				align-items: center
+				figcaption
+					p
+						+pad(.8rem 4rem)
+						color: color-get($mau, xam-6)
+		.list-par
+			h3
+				+fz(1.1rem)
+				+fw(700)
+				color: color-get($mau,main)
+				span
+					color: color-get($mau, xam-5)
+			ul.list
+				margin-right: 20px
+				padding-left: 6px
+				list-style-type: none
+				li
+					position: relative
+					+fz(1.0714285714285714rem)
+					padding-top: .5rem
+					&:before
+						display: inline-block
+						content: ''
+						width: 4px
+						height: 4px
+						background: color-get($mau, xam-5)
+						border-radius: 50%
+						margin-right: 5px
+						margin-bottom: 3px
+		time
+			+fz(.93rem)
+			+fw(200)
+			color: color-get($mau,xam-4)
+
+		.social-networks
+			.nav-item
+				margin-right: .5rem
+				&:last-child
+					margin-right: 0
+	.box-news
+		padding-right: 0
+		.othernews
+			overflow: hidden
+			width: 100%
+			hr
+				border-top: 1px dashed darken(color-get($mau,trang) ,10%)
+			h2
+				color: color-get($mau,xam-6)
+				+fz(1.4rem)
+				margin-bottom: 0
+			.lists
+				.item
+					display: flex
+					text-decoration: none
+					height: 100%
+					overflow: hidden
+					&:last-child
+						figure
+							margin-bottom: 1rem
+					&:first-child
+						figure
+							margin-top: 1rem
+					figure
+						figcaption
+							padding: 0 0 0 12px	
+							h3
+								+fz(1.1rem)
+								+fw(600)
+								color: color-get($mau,xam-6)
+							time
+								color: color-get($mau,xam-4)
+								padding-bottom: .4rem
+								display: block
+							// p
+							// 	color: color-get($mau,xam-5)
+							// 	line-height: 1.3rem
+							// 	+fz(1rem)
+							// 	margin-bottom: 0
+					&:hover
+						figure
+							background: darken(color-get($mau,trang) ,7%)
+							img
+								+opacity(.7)
+							figcaption
+								h3
+									color: darken(color-get($mau,main),0%)
+								time
+									color: darken(color-get($mau,trang) ,20%)
+								p
+									color: darken(color-get($mau,trang) ,70%)
+			+media-breakpoint-up(lg)
+				hr
+					display: none
+				h2
+					color: color-get($mau,xam-6)
+				.lists
+					.item
+						border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
+						margin-bottom: 1rem
+						&:last-child
+							border-bottom: 0
+							margin-bottom: 0
+
+						figure
+							background: none
+							display: flex
+							align-items: flex-start
+							width: 100%
+							min-height: 80px
+							margin-bottom: 1rem
+							figcaption
+								// p
+								// 	display: none
+						&:hover
+							figure
+								background: none
+								.thumb
+									+opacity(.7)
