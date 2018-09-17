@@ -1,0 +1,31 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-pagination-1, .support-page
+	+pad(0 0 4rem 0)
+	+media-breakpoint-up(md)
+		+pad(0 0 5rem 0)
+	.pagelist
+		.pagination
+			margin-bottom: 0
+			.page-item
+				margin-left: .5rem
+				&:first-child
+					margin-left: 0
+				.page-link
+					+bor-rad(0)
+					width: 2.8rem
+					height: 2.8rem
+					justify-content: center
+					align-items: center
+					+fw(600)
+					display: flex
+					color: lighten(color-get($mau,trang) ,5%)
+					background: color-get($mau,xam-3)
+				&.active, &:hover
+					.page-link
+						color: color-get($mau,trang)
+						background: color-get($mau,main)
+						border: 0

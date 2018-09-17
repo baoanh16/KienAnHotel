@@ -41,6 +41,11 @@
             "body": [
             ]
         },
+        "faq": {
+            "body": [
+                "faq/f-1"
+            ]
+        },
         "room": {
             "body": [
                 "boxes/b-4"
@@ -62,11 +67,13 @@
         },
         "promotion": {
             "body": [
-                "news/n-3"
+                "news/n-3",
+                "pagination/p-1"
             ]
         },
         "promotion-detail": {
             "body": [
+                "promotion-detail/p-1"
             ]
         },
         "support": {

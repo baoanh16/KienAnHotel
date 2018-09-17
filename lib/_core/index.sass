@@ -1,6 +1,5 @@
 @import ../_includes
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
-
+// @import url('https://fonts.googleapis.com/css?family=Encode+Sans:100,200,300,400,500,600,700,800,900')
 html, body
 	font-family: 'Encode Sans', sans-serif
 	font-size: 14px
@@ -218,6 +217,7 @@ header
 					+pos(abs, -20px 1.2rem null initial)
 				&:after
 					+pos(abs, -19px 1.2rem null initial)
+<<<<<<< HEAD
 
 
 .ka-subtitle
@@ -255,3 +255,47 @@ header
 			box-shadow: 0 0 0 1px color-get($mau, main) inset
 			color: color-get($mau, main)
 			border-bottom-color: color-get($mau, main)
+=======
+// button Kien An //
+.kienan-button
+	margin-top: 4rem
+	.btn-wrap
+		margin: auto
+		width: 200px
+		height: 47px
+		border: 1px solid color-get($mau, xam-7)
+		border-bottom: 3px solid color-get($mau, xam-7)
+		justify-content: center
+		align-items: center
+		display: flex
+		text-transform: uppercase
+		+fz(1.17rem)
+		+fw(400)
+		color: color-get($mau, xam-7)
+		text-decoration: none
+		&:hover
+			background: color-get($mau,main)
+			color: color-get($mau, trang)
+			
+// Titel Kien An//
+.kienan-title
+	text-transform: uppercase
+	color: color-get($mau,main)
+	position: relative
+	+fz(2.5rem)
+	+fw(400)
+	display: flex
+	text-align: center
+	justify-content: center
+	align-items: center
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		top: 45px
+		width: 55px
+		height: 2px
+		background: color-get($mau,main)
+>>>>>>> hai
