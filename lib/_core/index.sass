@@ -1,16 +1,22 @@
 @import ../_includes
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
-// +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
 
 html, body
-	font-family: 'Montserrat', sans-serif
+	font-family: 'Encode Sans', sans-serif
 	font-size: 14px
-	font-weight: 500
+	font-weight: 400
 	height: 100%
-	width: 100%
+	line-height: 1.5
+	max-width: 1600px
+	margin: auto
 	+selection
 		background-color: color-get($mau,main)
 		color: #fff
+		
+.container
+	+media-breakpoint-down(sm)
+		max-width: 100%
+
 
 h1, h2, h3, h4, h5, h6
 	font-size: initial
@@ -214,3 +220,38 @@ header
 					+pos(abs, -19px 1.2rem null initial)
 
 
+.ka-subtitle
+	+fz(r(25px))
+	text-transform: uppercase
+	color: color-get($mau, main)
+.ka-title
+	+fz(r(35px))
+	text-transform: uppercase
+	color: color-get($mau, main)
+	text-align: center
+	margin-bottom: r(55px)
+	position: relative
+	+lh(1)
+	+fw(400)
+	&:after
+		content: ''
+		+pos(abs, null null -15px calc(50% - 25px))
+		width: 50px
+		height: 2px
+		background: color-get($mau, main)
+
+.btn-readmore
+	+lh(45px)
+	+pad(null r(55px))
+	color: darken(color-get($mau, trang),38%)
+	+fz(r(16px))
+	text-transform: uppercase
+	box-shadow: 0 0 0 1px darken(color-get($mau, trang),38%) inset 
+	border-bottom: 1px solid darken(color-get($mau, trang),38%)
+	+bor-rad(0)
+	+transition(all .3s ease-in-out)
+	+media-breakpoint-up(md)
+		&:hover
+			box-shadow: 0 0 0 1px color-get($mau, main) inset
+			color: color-get($mau, main)
+			border-bottom-color: color-get($mau, main)

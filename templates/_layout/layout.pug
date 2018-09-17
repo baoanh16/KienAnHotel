@@ -1,6 +1,6 @@
 include ../_include/_variables
 doctype html
-include ../_include/_watermark
+//- include ../_include/_watermark
 
 html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org/WebSite", prefix="og: http://ogp.me/ns#", class="no-js")
 	head
@@ -9,36 +9,16 @@ html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org
 		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		meta(name='format-detection', content='telephone=no')
 		meta(name='msapplication-tap-highlight', content='no')
-		<!-- ////////////// Mobile title color ////////////// -->
-		meta(name='theme-color', content=config.SEO.mobile_color)
-		meta(name='msapplication-navbutton-color', content=config.SEO.mobile_color)
-		meta(name='apple-mobile-web-app-status-bar-style', content=config.SEO.mobile_color)
-		title #{title} - #{config.SEO.cfg_name}
-		if process.argv.slice(3).indexOf('--production') > -1
-			include ../_include/_seo
-		block socialmedia
-		<!-- ////////////// CSS Include ////////////// -->
+		link(href='https://fonts.googleapis.com/css?family=Encode+Sans:100,200,300,400,500,600,700,800,900', rel='stylesheet')
 		include ../_include/_css
-		<!-- ////////////// FAVICON ////////////// -->
-		if process.argv.slice(3).indexOf('--production') > -1
-			include ../_include/_favicon
 	body#top-page(class=process.argv.slice(3).indexOf('--production') < 0 ? 'canhcam-develop '+prefix+bodyclass+'-page' : prefix+bodyclass+'-page' || 'default')
 		#fb-root
-		<!-- ////////////// Header ////////////// -->
 		block header
-		<!-- ////////////// End Header ////////////// -->
-		<!-- ////////////// Begin Main ////////////// -->
 		main
 			block body
-		<!-- ////////////// End Main ////////////// -->
-		<!-- ////////////// Footer ////////////// -->
 		block footer
-		<!-- ////////////// End Footer ////////////// -->
-		<!-- ////////////// Back to Top ////////////// -->
 		a(href="#top-page", id="back-to-top", title="Back to top")
-			span TOP
-			i.fa.fa-angle-up
-		<!-- ////////////// Javascript Include ////////////// -->
+			i.fa.fa-angle-double-up
 		include ../_include/_script
 		block js
 

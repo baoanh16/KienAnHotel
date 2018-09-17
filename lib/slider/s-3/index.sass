@@ -1,0 +1,67 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-slider-3
+	+pad(r(70px) 0)
+	overflow: hidden
+	.owl-carousel
+		.owl-stage-outer
+			+media-breakpoint-up(xl)
+				overflow: initial
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(0)
+					width: r(60px)
+					height: r(60px)
+					border: 1px solid color-get($mau, main)
+					color: color-get($mau, main)
+					+bor-rad(50%)
+					+fz(32px)
+					text-align: center
+					&:focus
+						outline: none
+			+media-breakpoint-up(lg)
+				margin-top: 0
+				+transition(all .3s ease-in-out)
+				button
+					&.owl-prev, &.owl-next
+						margin: 0
+						border: 1px solid color-get($mau, trang)
+						color: color-get($mau, trang)
+						+transform(translateY(-50%))
+						&:hover, &.active
+							&.owl-prev, &.owl-next
+								background: white
+								border-color: color-get($mau, main)
+								color: color-get($mau, main)
+					&.owl-prev
+						+pos(abs, 50% null null null)
+						left: -50px
+					&.owl-next
+						+pos(abs, 50% null null null)
+						right: -50px
+		.owl-item
+			+media-breakpoint-up(lg)
+				// +pad(0 r(55px))
+				.item
+					position: relative
+					&:after
+						content: ''
+						+pos(abs, 0 null null 0)
+						width: 100%
+						height: 100%
+						+bg-cart
+						opacity: .8
+						+transition(all .3s ease-in-out)
+				&.center
+					.item
+						&:after
+							opacity: 0
+	// &:hover
+	// 	+media-breakpoint-up(md)
+	// 		.owl-carousel
+	// 			.owl-nav
+	// 				+opacity(1)

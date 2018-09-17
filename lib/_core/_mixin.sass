@@ -22,3 +22,42 @@
 			background-color: #{$hover}
 		&:active, &:focus , &.active, &.activated
 			background-color: #{$active}
+
+
+=bg-cart
+	background-image: -moz-linear-gradient( 0deg, rgb(25,84,124) 0%, rgb(0,125,143) 100%)
+	background-image: -webkit-linear-gradient( 0deg, rgb(25,84,124) 0%, rgb(0,125,143) 100%)
+	background-image: -ms-linear-gradient( 0deg, rgb(25,84,124) 0%, rgb(0,125,143) 100%)
+
+
+@function r($size)
+	$remSize: $size / 14px
+	@return #{$remSize}rem
+
+
+=material($content)
+	content: $content
+	display: inline-block
+	font: normal normal normal 24px/1 "Material Design Icons"
+	font-size: inherit
+	text-rendering: auto
+	line-height: inherit
+	-webkit-font-smoothing: antialiased
+
+=line($line)
+	display: -webkit-box
+	-webkit-line-clamp: $line
+	text-overflow: ellipsis
+	-webkit-box-orient: vertical
+	overflow: hidden
+
+
+=awesome($content, $font)
+	-webkit-font-smoothing: antialiased
+	display: inline-block
+	font-style: normal
+	font-variant: normal
+	text-rendering: auto
+	content: $content
+	font-family: 'Font Awesome 5 ' + $font
+	+fw(900)

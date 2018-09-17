@@ -1,10 +1,10 @@
 header.canhcam-header-7
 	nav.navbar.navbar-expand-md.container
 		a.navbar-brand.d-none.d-md-block(href='#')
-			img(src="./img/logo-ang.png", alt="Logo")
+			img(src="./img/logo.png", alt="Logo")
 		a.navbar-brand.d-md-none.mr-auto(href='#')
-			img(src="./img/logo-min.png", alt="Logo")
-		#language
+			img(src="./img/logo.png", alt="Logo")
+		#cart-toggle
 		button.navbar-toggler(type='button', data-toggle='offcanvas', data-target='#CCMenuHeader', aria-controls='CCMenuHeader', aria-expanded='false', aria-label='Toggle navigation')
 			span.mdi.mdi-menu
 
@@ -15,35 +15,24 @@ header.canhcam-header-7
 					i.mdi.mdi-close
 			ul.navbar-nav.mt-2.mt-md-0
 				li.nav-item.active
-					a.nav-link(href='#') Giới thiệu
+					a.nav-link(href='about.html') Giới thiệu
 				li.nav-item
-					a.nav-link(href='#') Dự án
+					a.nav-link(href='room.html') Loại phòng
 				li.nav-item
-					a.nav-link(href='#') Tin tức
+					a.nav-link(href='service.html') Dịch vụ
 				li.nav-item
-					a.nav-link(href='#') Phát triển bền vững
+					a.nav-link(href='promotion.html') Khuyến mãi
 				li.nav-item
-					a.nav-link(href='#') Thư viện
-				li.nav-item
-					a.nav-link(href='#') Tuyển dụng
-				li.nav-item
-					a.nav-link(href='#') Liên hệ
-
-
-			.language(k-menu-map-to="#language")
-				ul.list-unstyled
+					a.nav-link(href='support.html') Hỗ trợ
+			.language.navbar-nav
+				ul.nav
 					li
 						a(href='#')
-							span English
-							img(src="./img/icon/usa.png", alt="")
-
-			form.form-inline.my-2.my-md-0.search
-				.input-group
-					input.form-control(type='text', placeholder="Search", aria-label="Search", aria-describedby='basic-addon2')
-					.input-group-append
-						button.btn.btn-primary(type='submit')
-							i.fa.fa-search
-			.my-2.my-md-0.btnsearch.d-none.d-md-block
-				.btn.btn-link
-					i.fa.fa-search
-					i.fa.fa-times
+							img(src="./img/china.png", alt="")
+					li
+						a(href='#')
+							img(src="./img/uk.png", alt="")
+			.cart-toggle(k-menu-map-to="#cart-toggle")
+				.wrap.d-flex
+					span.far.fa-edit
+					p.mb-0 ĐẶT PHÒNG

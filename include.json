@@ -5,6 +5,9 @@
                 "header/h-7"
             ],
             "body": [
+                "slider/s-2",
+                "slider/s-3",
+                "boxes/b-1",
                 "boxes/b-9",
                 "boxes/b-16"
             ],
@@ -15,6 +18,8 @@
         "about": {
             "body": [
                 "slider/s-1",
+                "boxes/b-2",
+                "boxes/b-3",
                 "carousel/c-4"
             ]
         },
@@ -25,19 +30,15 @@
         },
         "checkout-2": {
             "body": [
-                "boxes/b-17"
             ]
         },
         "checkout-3": {
             "body": [
-                "slider/s-1",
-                "breadcrumb/b-4",
-                "carousel/c-4"
+                "breadcrumb/b-4"
             ]
         },
         "checkout-4": {
             "body": [
-                "boxes/b-17"
             ]
         },
         "room": {
@@ -47,12 +48,11 @@
         },
         "room-details": {
             "body": [
-                "shop-details/s-4"
+                "room-details/s-4"
             ]
         },
         "service": {
             "body": [
-                "boxes/b-9"
             ]
         },
         "service-detail": {
@@ -67,7 +67,6 @@
         },
         "promotion-detail": {
             "body": [
-                "news-details/n-1"
             ]
         },
         "support": {
@@ -87,7 +86,6 @@
         },
         "news-detail": {
             "body": [
-                "news-details/n-1"
             ]
         },
         "gallery": {

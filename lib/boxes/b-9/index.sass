@@ -3,27 +3,48 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-services-9
-	+pad(2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0)
-	h3 
-		text-transform: uppercase
-		color: lighten(color-get($mau,main),0%)
-		font-weight: 600 
-		position: relative
-		margin-bottom: 2rem
-		&:before
-			display: block
-			width: 60px
-			height: 2px
-			background: lighten(color-get($mau,extra),0%)
-			content: ''
-			+pos(abs, calc(100% + 10px) null null 0)
-	+media-breakpoint-up(lg)
-		.text 
-			padding-left: 2rem 
-			text-align: justify
-		.text-odd
-			text-align: justify
-			padding-right: 2rem 
+.canhcam-boxes-9
+	.text, .text-odd
+		background: darken(color-get($mau,trang),7%)
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		+pad(20px 15px 40px 15px)
+		+media-breakpoint-up(lg)
+			+pad(null r(70px))
+		p
+			margin-bottom: 1.5rem
+		.btn-readmore
+			+lh(45px)
+			+pad(null r(55px))
+			color: darken(color-get($mau, trang),38%)
+			+fz(r(16px))
+			text-transform: uppercase
+			box-shadow: 0 0 0 1px darken(color-get($mau, trang),38%) inset 
+			border-bottom: 1px solid darken(color-get($mau, trang),38%)
+			+bor-rad(0)
+			+transition(all .3s ease-in-out)
+			+media-breakpoint-up(md)
+				&:hover
+					box-shadow: 0 0 0 1px color-get($mau, main) inset
+					color: color-get($mau, main)
+					border-bottom-color: color-get($mau, main)
+	.col-md-6
+		overflow: hidden
+		+media-breakpoint-up(xl)
+			.text
+				padding-right: 135px
+			.text-odd
+				padding-left: 135px
+	figure
+		height: 100%
+		transition: all .3s ease-in-out
+		+media-breakpoint-up(md)
+			img
+				opacity: 0
+	.item
+		+media-breakpoint-up(md)
+			&:hover
+				figure
+					transform: scale(1.15)

@@ -8,31 +8,14 @@
 		position: relative
 		// Main
 		.owl-stage-outer
-			.item
-				min-height: 280px
-				+media-breakpoint-up(sm)
-					min-height: 320px
-				+media-breakpoint-up(md)
-					min-height: 380px
-				+media-breakpoint-up(lg)
-					min-height: 480px
-				.title
-					+pos(abs, null null 3rem 0)
-					text-align: center
-					width: 100%
-					+pad(0 1rem)
-					h1
-						color: color-get($mau,trang)
-						+text-sha(1px 1px 3px rgba(0,0,0,.4))
-					p
-						color: color-get($mau,trang)
-						+text-sha(2px 2px 3px rgba(0,0,0,.2))
-						+fz(1.5rem)
-						+lh(1.8rem)
-						+fw(300)
-						+media-breakpoint-up(md)
-							max-width: 50%
-							margin: 0 auto 1rem auto
+			// .item
+			// 	min-height: 280px
+			// 	+media-breakpoint-up(sm)
+			// 		min-height: 320px
+			// 	+media-breakpoint-up(md)
+			// 		min-height: 380px
+			// 	+media-breakpoint-up(lg)
+			// 		min-height: 480px
 		// Nav
 		.owl-nav
 			button
@@ -51,7 +34,6 @@
 						background: color-get($mau,main)
 						color: color-get($mau,trang)
 			+media-breakpoint-up(md)
-				+opacity(0)
 				margin-top: 0
 				+transition(all .3s ease-in-out)
 				button
