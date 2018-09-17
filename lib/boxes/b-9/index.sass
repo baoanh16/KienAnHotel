@@ -7,23 +7,39 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	h3 
-		text-transform: uppercase
-		color: lighten(color-get($mau,main),0%)
-		font-weight: 600 
-		position: relative
-		margin-bottom: 2rem
-		&:before
-			display: block
-			width: 60px
-			height: 2px
-			background: lighten(color-get($mau,extra),0%)
-			content: ''
-			+pos(abs, calc(100% + 10px) null null 0)
+	figure
+		margin-bottom: 0
+	.text, .text-odd
+		h3 
+			text-transform: uppercase
+			color: lighten(color-get($mau,main),0%)
+			font-weight: 600 
+			position: relative
+			margin-bottom: 1rem
+			// &:before
+			// 	display: block
+			// 	width: 60px
+			// 	height: 2px
+			// 	background: lighten(color-get($mau,extra),0%)
+			// 	content: ''
+			// 	+pos(abs, calc(100% + 10px) null null 0)
+			
+
 	+media-breakpoint-up(lg)
-		.text 
-			padding-left: 2rem 
-			text-align: justify
-		.text-odd
-			text-align: justify
-			padding-right: 2rem 
+		.bg
+			background: color-get($mau, trang-2)
+
+			.text, .text-odd
+				+pad(4rem 4rem 0 2rem) 
+				text-align: justify
+				
+				.kienan-button
+					margin-top: 0
+					.btn-wrap
+						margin: 0
+						width: 138px
+						height: 33px
+						+fz(.8rem)
+			.text-odd
+				text-align: justify
+				padding-right: 2rem 
