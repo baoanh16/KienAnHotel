@@ -4,60 +4,122 @@
 //////////////////////////////////////
 
 .canhcam-boxes-15
-	+pad(3rem 0)
+	+pad(3rem 2rem)
 	.timeline
 		line-height: 1.4em
 		list-style: none
 		margin: 0
 		padding: 1rem
 		width: 100%
+		color: color-get($mau, xam-6)
 		.timeline-item
-			padding-left: 40px
+			padding-left: 44px
 			position: relative
-
+			.timeline-number
+				position: relative
+				color: color-get($mau,trang)
+				+fw(bold)
+				+fz(1.3rem)
+				top: 20px
+				left: -48px
+				+lh(1)
+				z-index: 99
+				&:after
+					background: darken(color-get($mau,main),0%)
+					border: 3px solid transparent
+					transform: rotate(45deg)
+					content: ''
+					display: block
+					height: 26px
+					position: absolute
+					top: -5px
+					z-index: -999
+					left: -9px
+					width: 26px
+					
+					transition: background 0.3s ease-in-out, border 0.3s ease-in-out
+				&:before
+					background: color-get($mau, trang)
+					border: 1px solid color-get($mau, main)
+					transform: rotate(45deg)
+					content: ''
+					display: block
+					height: 31px
+					width: 31px
+					position: absolute
+					top: -7px
+					z-index: -999
+					left: -12px
+					
 			.timeline-info
-				font-size: 1rem
-				font-weight: bold
-				letter-spacing: 3px
+				
 				margin: 0 0 .5em 0
 				text-transform: uppercase
 				white-space: nowrap
-				color: darken(color-get($mau,trang),30%)
-
+				color: color-get($mau, main)
+			.timeline-title
+				+fz(1.3rem)
+				+fw(bold)
 			.timeline-marker
 				position: absolute
 				top: 0
 				bottom: 0
 				left: 0
 				width: 15px
-				&:before
-					background: darken(color-get($mau,main),0%)
-					border: 3px solid transparent
-					border-radius: 100%
-					content: ""
-					display: block
-					height: 15px
-					position: absolute
-					top: 4px
-					left: 0
-					width: 15px
-					transition: background 0.3s ease-in-out, border 0.3s ease-in-out
+				// &:before
+				// 	background: darken(color-get($mau,main),0%)
+				// 	border: 3px solid transparent
+				// 	transform: rotate(45deg)
+				// 	content: ''
+				// 	display: block
+				// 	height: 30px
+				// 	position: absolute
+				// 	top: 4px
+				// 	left: 0
+				// 	width: 30px
+				// // 	transition: background 0.3s ease-in-out, border 0.3s ease-in-out
 				&:after
 					content: ""
-					width: 3px
-					background: darken(color-get($mau,trang),10%)
+					width: 2px
+					background: color-get($mau, main)
 					display: block
 					position: absolute
 					top: 24px
-					bottom: 0
-					left: 6px
+					bottom: -10px
+					left: -1px
+					z-index: -9999
 			.timeline-content
 				padding-bottom: 2rem
 				p:last-child
 					margin-bottom: 0
 				.timeline-title
 					+fz(1.5rem)
-
+				h4
+					+fz(1.03rem)
+					+fw(700)
+					color: color-get($mau, xam-6)
+				.note
+					font-style: italic
+					+fw(bold)
+					color
+					span
+						+fw(500)
+				.list-item
+					list-style-type: none
+					padding-left: 1.5rem
+					.item
+						position: relative
+						padding-bottom: .8rem
+						&:before
+							content: ''
+							display: block
+							width: 8px
+							height: 8px
+							position: absolute
+							background: color-get($mau,xam-4)
+							border-radius: 50px
+							top: 5px
+							left: -21px
 			&:last-child
 				padding-bottom: 0
 				.timeline-marker
@@ -65,11 +127,11 @@
 						content: none
 				.timeline-content
 					padding-bottom: 0
-			&:not(.period):hover
-				.timeline-content
-					.timeline-title
-						color: darken(color-get($mau,main),0%)
-				.timeline-marker
-					&:before
-						background: transparent
-						border: 3px solid darken(color-get($mau,main),0%)
+			// &:not(.period):hover
+			// 	.timeline-content
+			// 		.timeline-title
+			// 			color: darken(color-get($mau,main),0%)
+			// 	.timeline-marker
+			// 		&:before
+			// 			background: transparent
+			// 			border: 3px solid darken(color-get($mau,main),0%)

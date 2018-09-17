@@ -8,16 +8,62 @@
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.info
-		h3
-			+fz(1.3rem)
-			text-transform: uppercase
 		.inf
+			background: color-get($mau, duong-5)
 			+pad(2rem)
+			border-radius: 1rem
+			margin-bottom: 1.5rem
+			+fw(500)
+			color: color-get($mau, main)
+			+media-breakpoint-up(md)
+				padding-bottom: 3.2rem
+			+media-breakpoint-up(lg)
+				padding-bottom: 5.5rem
 			h2
+				+fz(1.8rem)
+				text-transform: uppercase
+				padding-bottom: 1rem
+			h3
 				+fz(1.3rem)
-	form
-		.help-block
-			ul
-				margin-bottom: 0
-				+fz(.9rem)
-				color: color-get($mau,do-1)
+				+fw()
+				padding-bottom: .7rem
+			p
+				+fz(1.03rem)
+				+fw(600)
+				color: color-get($mau, den)
+				span
+					+fz(1.03rem)
+					+fw(400)
+		.form-control
+			border: none
+			+pad(.9rem .9rem)
+			background: color-get($mau, duong-5)
+			+placeholder
+				color: color-get($mau, xam-5)
+		.captcha
+			display: flex
+			flex-wrap: wrap
+			+media-breakpoint-up(md)
+				flex-wrap: nowrap
+			.reload
+				font-size: 2rem
+				margin: auto
+			a
+				text-decoration: none	
+			input
+				margin-top: 1rem
+				width: 100%
+			// button
+			// // +fz(2.5rem)
+			// // color: color-get($mau,main)
+			.btn-btn-more
+				padding: .8rem 0
+				background: color-get($mau, main)
+				border-radius: 0
+				margin-top: 1rem
+				color: white
+				width: 50%
+		form
+			.has-danger	
+				input, textarea, select
+					border-color: color-get($mau,do-1)
