@@ -254,3 +254,125 @@ header
 			box-shadow: 0 0 0 1px color-get($mau, main) inset
 			color: color-get($mau, main)
 			border-bottom-color: color-get($mau, main)
+.btn-submit
+	text-align: center
+	margin-bottom: 0
+	a
+		+pad(.43rem 1.14rem)
+		background: color-get($mau, main)
+		color: color-get($mau, trang)
+		text-transform: uppercase
+		+fz(1.07rem)
+		text-decoration: none
+	&.btn-center
+		text-align: center
+	&.btn-right
+		text-align: right
+	&.btn-left
+		text-align: left
+
+
+.canhcam-checkout-1,.canhcam-checkout-2,.canhcam-checkout-3,.canhcam-checkout-4
+	+pad(2rem 0)
+	.submit-group
+		display: flex
+		align-items: center
+		justify-content: space-between
+	.emty-title
+		margin-bottom: 1rem
+		+fz(1.43rem)
+		+fw(600)
+		color: color-get($mau , xam-6)
+	.checkout-nav
+		margin-bottom: 1.43rem
+		ul
+			display: flex
+			justify-content: space-between
+			align-items: center
+			+pad(0)
+			+mar(0)
+			list-style-type: none
+			position: relative
+			&:after
+				content: ''
+				width: 100%
+				height: 5px
+				background: color-get($mau , grey-1)
+				+pos(abs , null null 0 0)
+			li
+				padding-bottom: 0.79rem
+				position: relative
+				a
+					color: color-get($mau , xam-6)
+					+fw(500)
+					+fz(1rem)
+					text-decoration: none
+				&:after
+					content: ''
+					width: 100%
+					height: 5px
+					background: color-get($mau , grey-1)
+					+pos(abs , null null 0 0)
+					z-index: 1
+				&.active
+					a
+						color: color-get($mau , main)
+					&:after
+						background: color-get($mau , main)
+	.list-picker
+		margin-top: 2rem
+		background-image: -moz-linear-gradient( 90deg, rgb(25,84,124) 0%, rgb(0,125,143) 100%)
+		background-image: -webkit-linear-gradient( 90deg, rgb(25,84,124) 0%, rgb(0,125,143) 100%)
+		background-image: -ms-linear-gradient( 90deg, rgb(25,84,124) 0%, rgb(0,125,143) 100%)
+		box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2)
+		+pad(2rem 1rem)
+		h2
+			text-align: center
+			+fz(1.21rem)
+			+fw(400)
+			color: color-get($mau ,trang)
+		.picker-day
+			.input-group
+				display: flex
+				flex-direction: column
+				position: relative
+				label
+					color: color-get($mau , grey-5)
+					+fz(1.07rem)
+				input
+					background: none
+					border: 1px solid color-get($mau ,grey-6)
+					+bor-rad(5px)
+					color: color-get($mau , trang)
+					text-align: left
+			.input-item
+				margin-bottom: 1rem
+				position: relative
+				&:last-child
+					margin-bottom: 2rem
+				&:after
+					content: '\f073'
+					display: block
+					font-family: 'Font Awesome 5 Free'
+					+fw(400)
+					+pos(abs , 2.5rem 0.71rem null null)
+					color: color-get($mau ,grey-6)
+		.picker-submit
+			text-align: center
+			margin-bottom: 0
+			a
+				text-decoration: none
+				text-transform: uppercase
+				+fz(1.07rem)
+				color: color-get($mau , trang)
+				+pad(.5rem 2.36rem)
+				+box-sha(0 0 0 1px color-get($mau , trang))
+	+media-breakpoint-up(lg)
+		.list-picker
+			margin-top: 0
+		.checkout-nav
+			ul
+				li
+					a
+						+fw(700)
+						+fz(1.07rem)

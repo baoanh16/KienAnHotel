@@ -1,0 +1,99 @@
+section.canhcam-checkout-2
+	article.checkout-lists
+		.container
+			.row
+				.col-lg-9
+					nav.checkout-nav
+						ul
+							li.active
+								a(href="#") 1.Đặt phòng
+							li
+								a(href="#") 2.Chi tiết phòng và điền thông tin
+							li
+								a(href="#") 3.Thanh toán
+							li
+								a(href="#") 4.Hoàn tất
+					h2.emty-title Đặt phòng
+					.list-items
+						.item.table-price.table-responsive
+							table.table
+								thead
+									tr
+										th(scope='col') Loại phòng
+										th(scope='col') Số lượng
+										th(scope='col') Giá
+										th(scope='col') Giá ngày nghỉ
+								tbody
+									tr
+										th(scope='row') Phòng vip
+										td 01
+										td 900.000đ
+										td 900.000đ
+									tr
+										th(scope='row') Phòng vip
+										td 01
+										td 900.000đ
+										td 900.000đ
+						.item.people-count
+							.input-group
+								label Người lớn
+								input(type="text", name="")
+							.input-group
+								label Trẻ em
+								input(type="text", name="")
+							.input-group
+								input(type="checkbox", name="")
+								label Có hút thuốc
+					h2.emty-title Thông tin cá nhân
+					.list-items
+						.item.form-reg
+							.row.pb-4
+								.col-sm-12.col-md-6.input
+									label Họ và tên
+									input.form-control(type="text")
+								.col-sm-12.col-md-6
+									label Địa chỉ
+									input.form-control(type="text")
+							.row.pb-4
+								.col-sm-12.col-md-6.input
+									label Email
+									input.form-control(type="text")
+								.col-sm-12.col-md-6
+									label Điện thoại
+									input.form-control(type="text")
+							.row
+								.form-group.col
+									label Yêu cầu đặc biệt
+									textarea#sms.form-control( name="sms", cols="30", rows="5")
+					.submit-group
+						p.btn-submit.btn-right
+							a(href="#") Tiếp tục
+						p.btn-submit.btn-left
+							a(href="#") Quay lại
+				.col-lg-3
+					.list-picker
+						h2.picker-title Thông tin đặt phòng
+						.picker-group
+							.picker-info
+								span.picker-title Ngày đến
+								span.picker-result 24-08-2015
+							.picker-info
+								span.picker-title Ngày đi
+								span.picker-result 24-08-2018
+						.picker-group
+							.picker-info
+								span.picker-title Ngày đến
+								span.picker-result
+									| Phòng Vip
+									br
+									| Phòng tiện nghi
+							.picker-info
+								span.picker-title Số lượng
+								span.pick-result 02
+						.picker-group
+							.picker-info.sum
+								span.picker-title Tổng tiền
+								span.picker-result 1.000.000
+						p.picker-submit
+							a(href="#") Chỉnh sửa
+
