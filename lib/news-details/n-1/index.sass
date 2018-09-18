@@ -3,7 +3,7 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-news-details-1
+.canhcam-news-details-1,.canhcam-news-details-2
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
@@ -11,21 +11,21 @@
 		text-align: start
 		margin-bottom: 2rem
 		h1
-			+fz(1.4rem)
-			+fw(600)
+			+fz(1.43rem)
+			+fw(500)
 			color: lighten(color-get($mau,main),8)
 			+pad(1rem 0 1.5rem 0)
 		p
 			+fz(1.1rem)
-			+fw(500)
-			color: color-get($mau, xam-6)
-			&.lead
-				color: color-get($mau, xam-5)
-				+fw(500)
+			+fw(400)
+			color: color-get($mau, xam-5)
+			// &.lead
+			// 	color: color-get($mau, xam-5)
+			// 	+fw(400)
 		figure
 			+mar(1rem 0)
-			
-		strong 
+
+		strong
 			+fz(1.1rem)
 			+fw(500)
 			color: color-get($mau, main)
@@ -84,7 +84,7 @@
 						overflow: hidden
 						margin-bottom: 1rem
 						figcaption
-							padding: 0 0 0 12px	
+							padding: 0 0 0 12px
 							h3
 								+fz(1.1rem)
 								+fw(600)
@@ -130,7 +130,17 @@
 							width: 100%
 							min-height: 80px
 							margin-bottom: 1rem
+							.thumb
+								display: block
+								height: 100%
+								+pos(abs, 0 null null 0)
+								width: 40%
+								max-width: 40%
+								// +bor-rad(5px)
+							img
+								display: none
 							figcaption
+								+pad(0 0 0 calc(40% + 1rem))
 								// p
 								// 	display: none
 						&:hover

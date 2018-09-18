@@ -1,0 +1,25 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+.canhcam-boxes-18
+	+pad(2rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+		.item
+			h3
+				+fz(1.25rem)
+			+transition(all .4s ease-in-out)
+			&:hover
+				.text,.text-odd
+					background: color-get($mau , main)
+					color: color-get($mau , trang)
+					h3
+						color: color-get($mau , trang)
+				.btn-readmore
+					color: color-get($mau , trang)
+					+box-sha(0 0 0 1px color-get($mau , trang) inset)
+
+

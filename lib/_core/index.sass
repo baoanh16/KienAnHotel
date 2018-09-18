@@ -6,12 +6,12 @@ html, body
 	font-weight: 400
 	height: 100%
 	line-height: 1.5
-	max-width: 1600px
-	margin: auto
+	// max-width: 1600px
+	// margin: auto
 	+selection
 		background-color: color-get($mau,main)
 		color: #fff
-		
+
 .container
 	+media-breakpoint-down(sm)
 		max-width: 100%
@@ -187,7 +187,7 @@ header
 	input[type="radio"]:indeterminate + label::after
 		background: none
 
-.k-responsive-menu.k-menu-horizontal.k-active-mobile .dropdown-menu, 
+.k-responsive-menu.k-menu-horizontal.k-active-mobile .dropdown-menu,
 [k-responsive-menu].k-menu-horizontal.k-active-mobile .dropdown-menu
 	&.dropdown-arrow
 		position: relative !important
@@ -240,12 +240,12 @@ header
 		background: color-get($mau, main)
 
 .btn-readmore
-	+lh(45px)
+	// +lh(45px)
 	+pad(null r(55px))
 	color: darken(color-get($mau, trang),38%)
 	+fz(r(16px))
 	text-transform: uppercase
-	box-shadow: 0 0 0 1px darken(color-get($mau, trang),38%) inset 
+	box-shadow: 0 0 0 1px darken(color-get($mau, trang),38%) inset
 	border-bottom: 1px solid darken(color-get($mau, trang),38%)
 	+bor-rad(0)
 	+transition(all .3s ease-in-out)

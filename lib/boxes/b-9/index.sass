@@ -3,7 +3,7 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-boxes-9
+.canhcam-boxes-9,.canhcam-boxes-18
 	.text, .text-odd
 		background: darken(color-get($mau,trang),7%)
 		height: 100%
@@ -16,12 +16,12 @@
 		p
 			margin-bottom: 1.5rem
 		.btn-readmore
-			+lh(45px)
-			+pad(null r(55px))
+			// +lh(45px)
+			+pad(.9rem r(55px))
 			color: darken(color-get($mau, trang),38%)
 			+fz(r(16px))
 			text-transform: uppercase
-			box-shadow: 0 0 0 1px darken(color-get($mau, trang),38%) inset 
+			box-shadow: 0 0 0 1px darken(color-get($mau, trang),38%) inset
 			border-bottom: 1px solid darken(color-get($mau, trang),38%)
 			+bor-rad(0)
 			+transition(all .3s ease-in-out)
@@ -48,3 +48,6 @@
 			&:hover
 				figure
 					transform: scale(1.15)
+				// .text
+				// 	background: color-get($mau , main)
+				// 	color: color-get($mau , trang)

@@ -9,7 +9,8 @@
                 "slider/s-3",
                 "boxes/b-1",
                 "boxes/b-9",
-                "boxes/b-16"
+                "boxes/b-16",
+                "boxes/b-18"
             ],
             "footer": [
                 "footer/f-2"
@@ -20,7 +21,12 @@
                 "slider/s-1",
                 "boxes/b-2",
                 "boxes/b-3",
-                "carousel/c-4"
+                "carousel/c-4",
+                "checkout/c-1",
+                "checkout/c-2",
+                "checkout/c-3",
+                "checkout/c-4",
+                "checkout/c-5"
             ]
         },
         "checkout-1": {
@@ -62,7 +68,8 @@
         },
         "service-detail": {
             "body": [
-                "news-details/n-1"
+                "news-details/n-1",
+                "news-details/n-2"
             ]
         },
         "promotion": {
@@ -97,7 +104,8 @@
         },
         "gallery": {
             "body": [
-                "gallery/g-4"
+                "gallery/g-4",
+                "gallery/g-3"
             ]
         },
         "contact": {
