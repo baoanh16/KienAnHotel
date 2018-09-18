@@ -3,44 +3,141 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-room-details-4
-	.room-slide-img
-		.slidewrap
-			.slide-nav
-				width: 95px
-				padding-right: 20px
-				.slick-list
-					height: calc(100% - r(70px))!important
-					+mar(r(35px) 0)
-				.item
-					+ .item
-						margin-top: 15px
-			.slide-for
-				width: calc(100% - 95px)
-	.product-info
-		.room-name
-			+fz(r(25px))
-			color: color-get($mau, main)
-			text-transform: uppercase
-			margin-bottom: r(18px)
-		.table
-			tbody
-				tr
-					td
-						&:first-child
-							+fw(700)
-							+fz(r(16px))
-							width: r(185px)
-							padding-left: 0
-					&:last-child
+.canhcam-shop-details-4
+	+pad(r(70px) 0)
+	.product-details
+		.productimg-slide
+			.slidewrap
+				.product-nav
+					display: none
+				.product-slide
+					margin-top: 2rem
+					.item
+						display: flex
+						justify-content: center
+						a
+							width: 100%
+					.slick-arrow
+						background: rgba(0,0,0,.3)
+						color: rgba(255,255,255,.3)
+						padding: .85rem 1rem
+						width: initial
+						height: initial
+						z-index: 100
+						&:before
+							font-family: 'Font Awesome 5 Free'
+							font-weight: 900
+							+fz(1rem)
+						&.slick-prev
+							left: 0
+							&:before
+								content: '\f053'
+						&.slick-next
+							right: 0
+							&:before
+								content: '\f054'
+						&.slick-disabled
+							&:before
+								+opacity(.5)
+						&:hover 
+							background: color-get($mau,main)
+							color: color-get($mau,trang)	
+				+media-breakpoint-up(sm)
+					.promotion,.product-name
+						display: none
+					.product-nav
+						+pad(1rem)
+						display: block
+						width: 20%
+						display: flex
+						align-items: center
+						.item
+							+mar(10px 0)
+						.slick-arrow
+							&:before
+								opacity: 1
+								font-family: 'Font Awesome 5 Free'
+								font-weight: 900
+								+fz(1rem)
+								color: color-get($mau,main)
+							&.slick-prev, &.slick-next
+								width: 100%
+								top: auto
+								+transform(translate(-50%,-50%))
+							&.slick-prev
+								left: 50%
+								top: .5rem
+								&:before
+									content: '\f077'
+							&.slick-next
+								left: 50%
+								bottom: -1rem
+								&:before
+									content: '\f078'
+					.product-slide
+						margin-top: 0
+						width: 80%
+		.product-info
+			.product-name
+				+fz(r(25px))
+				// +fw(500)
+				color: color-get($mau,main)
+				text-transform: uppercase
+				margin-bottom: r(18px)
+			.table-responsive
+				table
+					tr
 						td
-							border-bottom: 1px solid #dee2e6
-		.btn-book
-			+bor-rad(0)
-			+fz(r(16px))
-			text-transform: uppercase
-			color: color-get($mau, trang)
-			+btn-book
-			min-width: (r(200px))
-			// +lh(r(50px))
-			+pad(r(13px) 0)
+							&:first-child
+								padding-left: 0
+								+fw(700)
+						&:last-child
+							td
+								border-bottom: 1px solid #dee2e6
+			.btn-wrap
+				margin-bottom: 1rem
+				display: inline-block
+				a.btn-buy
+					min-width: r(200px)
+					+pad(13px)
+					+bor-rad(0)
+					+fz(16px)
+					text-transform: uppercase
+					+btn-book
+					color: color-get($mau, trang)
+					&:hover
+						&:after
+							transform: scale(1)
+							transition: .3s ease-in-out
+	.product-description
+		margin-top: 2rem
+		nav
+			border: 0
+			padding-bottom: 1px
+			margin-bottom: 2rem
+			justify-content: center
+			border-bottom: 1px solid lighten(color-get($mau,den),10%)
+			a.nav-link
+				border: 0
+				+pad(1rem 1.2rem)
+				+fw(600)
+				color: darken(color-get($mau,trang),30%)
+				font-size: 1rem
+				position: relative
+				&.active,&:hover
+					color: lighten(color-get($mau,den),20%)
+					border: 0
+					&:after
+						content: ''
+						width: 60px
+						height: 3px
+						background: lighten(color-get($mau,den),20%)
+						+pos(abs,null null -2px 50%)
+						+transform(translate(-50%,-50%))
+						transition: .5s all ease-in-out
+				&.active
+					color: lighten(color-get($mau,den),20%)!important
+				&:hover
+					color: darken(color-get($mau,trang),30%)
+		.tab-content
+			+fw(400)

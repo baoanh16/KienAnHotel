@@ -1,11 +1,30 @@
-section.canhcam-room-details-4
+section.canhcam-shop-details-4
 	article.product-details
 		.container
-			.row
+			.row.d-flex
 				.col-12.col-md-6
-					.room-slide-img
+					.productimg-slide
 						.slidewrap.d-sm-flex
-							.slide-for.order-sm-2
+							.product-slide.order-sm-2
+								.item
+									a(href="./img/room/r_1.jpg")
+										img.img-fluid(src="./img/room/r_1.jpg", alt="")
+								.item
+									a(href="./img/room/r_2.jpg")
+										img.img-fluid(src="./img/room/r_2.jpg", alt="")
+								.item
+									a(href="./img/room/r_3.jpg")
+										img.img-fluid(src="./img/room/r_3.jpg", alt="")
+								.item
+									a(href="./img/room/r_4.jpg")
+										img.img-fluid(src="./img/room/r_4.jpg", alt="")
+								.item
+									a(href="./img/room/r_3.jpg")
+										img.img-fluid(src="./img/room/r_3.jpg", alt="")
+								.item
+									a(href="./img/room/r_4.jpg")
+										img.img-fluid(src="./img/room/r_4.jpg", alt="")
+							.product-nav.order-sm-1
 								.item
 									img.img-fluid(src="./img/room/r_1.jpg", alt="")
 								.item
@@ -14,18 +33,13 @@ section.canhcam-room-details-4
 									img.img-fluid(src="./img/room/r_3.jpg", alt="")
 								.item
 									img.img-fluid(src="./img/room/r_4.jpg", alt="")
-							.slide-nav.order-sm-1
-								.item
-									img.img-fluid(src="./img/room/r_1.jpg", alt="")
-								.item
-									img.img-fluid(src="./img/room/r_2.jpg", alt="")
 								.item
 									img.img-fluid(src="./img/room/r_3.jpg", alt="")
 								.item
 									img.img-fluid(src="./img/room/r_4.jpg", alt="")
 				.col-12.col-md-6
 					section.product-info
-						h1.room-name Phòng Vip
+						h1.product-name Phòng vip
 						.table-responsive
 							table.table
 								tbody
@@ -39,14 +53,14 @@ section.canhcam-room-details-4
 										td Mô tả
 										td Nội thất tiện nghi cùng một không gian ấm cúng, giúp cho quí khách những trải nghiệm tiệc vời
 						.btn-wrap
-							a.btn.btn-book(href="#") Đặt phòng
-						.share
-							a(href="#")
-								em.fab.fa-facebook-f
-							a(href="#")
-								em.fab.fa-twitter
-							a(href="#")
-								em.fab.fa-google-plus-g
+							a.btn.btn-buy(href="#") Đặt phòng
 				.col
 					section.product-description
-						
+						nav.nav.nav-tabs(role="tablist")
+							a#tab1-tab.nav-link.active.nav-item(data-toggle="tab" href="#tab1" role="tab" aria-controls="nav-home-tab" aria-selected="true") Mô tả
+							a#tab2-tab.nav-link.nav-item(data-toggle="tab" href="#tab2" role="tab" aria-controls="nav-profile-tab" aria-selected="false") Thông số kỹ thuật
+						.tab-content
+							#tab1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-home-tab")
+								.content
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nulla, recusandae modi consequuntur voluptas voluptatibus dolore sed repellat illo eos quos rem. Earum amet fugit quidem nostrum qui voluptatibus quae.
+							#tab2.tab-pane.fade(role="tabpanel" aria-labelledby="nav-profile-tab") Eveniet nulla, recusandae modi consequuntur voluptas voluptatibus dolore sed repellat illo eos quos rem. Earum amet fugit quidem nostrum qui voluptatibus quae.
