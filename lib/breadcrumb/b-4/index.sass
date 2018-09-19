@@ -6,11 +6,9 @@
 .canhcam-breadcrumb-4
 	background: darken(color-get($mau,trang),8%)
 	+pad(4px 0)
+	display: none
 	.main-breadcrumb
 		width: 100%
-		display: none
-		+media-breakpoint-up(md)
-			display: block
 		.breadcrumb
 			margin-bottom: 0
 			+bor-rad(0)
@@ -18,7 +16,7 @@
 			position: relative
 			background: none
 			li
-				
+
 				position: relative
 				line-height: 1.5rem
 				display: flex
@@ -46,4 +44,5 @@
 							margin-right: 8px
 							color: darken(color-get($mau,trang),50%)
 							+awesome('\f015','Free')
-
+	+media-breakpoint-up(md)
+		display: block

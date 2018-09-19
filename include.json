@@ -10,7 +10,11 @@
                 "boxes/b-1",
                 "boxes/b-9",
                 "boxes/b-16",
-                "boxes/b-18"
+                "boxes/b-18",
+                "nav/n-1",
+                "support/s-1",
+                "support/s-2",
+                "support/s-3"
             ],
             "footer": [
                 "footer/f-2"

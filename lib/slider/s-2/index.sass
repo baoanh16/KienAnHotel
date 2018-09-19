@@ -10,13 +10,18 @@
 		// Main
 		.owl-stage-outer
 			.item
-				min-height: 280px
-				+media-breakpoint-up(sm)
-					min-height: 320px
+				height: calc(100vh - 52px)
+				// +media-breakpoint-up(sm)
+				// 	min-height: 320px
+				display: flex
+				justify-content: center
+				// align-items: flex-end
+				align-items: center
 				+media-breakpoint-up(lg)
-					min-height: 600px
-				+media-breakpoint-up(xl)
-					min-height: 740px
+					height: calc(100vh - 80px)
+					align-items: flex-end
+				// +media-breakpoint-up(xl)
+				// 	min-height: 740px
 				position: relative
 				&:before
 					content: ''
@@ -25,31 +30,36 @@
 					height: 100%
 					background: linear-gradient(to top, rgba(0,0,0,.8) , rgba(0,0,0,0))
 				.title
-					+pos(abs, null null 50% 0)
-					transform: translateY(50%)
+					position: relative
+					z-index: 2
+					// +pos(abs, null null 50% 0)
+					// transform: translateY(50%)
 					text-align: center
+					+pad(null 1rem)
 					width: 100%
+					// padding-bottom: 7rem
 					p
-						margin: 0 auto
-						max-width: 85%
+						// margin: 0 auto
+						// max-width: 85%
 						color: color-get($mau,trang)
 						+text-sha(2px 2px 3px rgba(0,0,0,.2))
 						+fw(300)
+						+fz(1.5rem)
 						text-transform: uppercase
-					+media-breakpoint-up(sm)
-						p
-							+fz(1.6rem)
-							max-width: 75%
-					+media-breakpoint-up(md)
-						p
-							+fz(1.8rem)
-							max-width: 66.67%
+					// +media-breakpoint-up(sm)
+					// 	p
+					// 		+fz(1.6rem)
+					// 		max-width: 75%
+					// +media-breakpoint-up(md)
+					// 	p
+					// 		+fz(1.8rem)
+					// 		max-width: 66.67%
 					+media-breakpoint-up(lg)
-						bottom: 10.5rem
+						bottom: 8rem
 						transform: none
 						p
 							+fz(2.14rem)
-							+lh(2.85rem)
+						// 	+lh(2.85rem)
 		// Nav
 		.owl-nav
 			button
@@ -99,19 +109,39 @@
 				.owl-nav
 					+opacity(1)
 	.btn-down
-		display: none
-		+media-breakpoint-up(lg)
+		+pos(abs , null null 3rem 50%)
+		+transform(translateX(-50%))
+		z-index: 1
+		width: 4.29rem
+		height: 4.29rem
+		+bor-rad(50%)
+		+box-sha(0 0 0 1px color-get($mau , trang))
+		display: flex
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		span
 			display: block
-			+pos(null,null null 60px 50%)
-			transform: translateX(-50%)
-			z-index: 1050
-			cursor: pointer
-			.circle
-				width: 60px
-				+bor-rad(50%)
-				border: 1px solid color-get($mau, trang)
-				span
-					+lh(60px)
-					+fz(42px)
-					color: color-get($mau, trang)
-					+pad(0 9px)
+			width: 1.43rem
+			height: 1.43rem
+			margin: -0.71rem
+			border-bottom: 2px solid color-get($mau , trang)
+			border-right: 2px solid color-get($mau , trang)
+			+transform(rotate(45deg))
+			+animation(down 2s infinite)
+			// &:nth-child(2)
+			// 	animation-delay: -0.3s
+			// &:nth-child(3)
+			// 	animation-delay: -0.6s
+@keyframes down
+	0%
+		// opacity: 0
+		+transform(rotate(45deg) translate(-10px,-10px))
+		// +transform(rotate(45deg) translate(-20px , -20px))
+	50%
+	// 	opacity: 1
+		+transform(rotate(45deg) translate(-5px,-5px))
+	100%
+		// opacity: 0
+		+transform(rotate(45deg) translate(0,0))
+		// +transform(rotate(45deg) translate(20px , 20px))

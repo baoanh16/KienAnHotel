@@ -2,3 +2,45 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
+
+
+.canhcam-checkout-3
+	.checkout-lists
+		.list-items
+			.item
+				+pad(1rem 0)
+				+box-sha(0 1px 0 0 color-get($mau , bor-4))
+				.item-radio
+					display: flex
+					align-items: center
+					margin-bottom: 1rem
+					label
+						color: color-get($mau , main)
+						margin-bottom: 0
+						margin-left: .3rem
+				.img-line
+					display: flex
+					margin-bottom: 1rem
+					a
+						display: block
+						margin-right: .5rem
+						img
+							border: 1px solid color-get($mau , bor-1)
+							+bor-rad(10px)
+							+transition(all .4s ease-in-out)
+						&:last-child
+							margin-right: 0
+						&:hover,&.active
+							img
+								+box-sha(2px 2px 11px rgba(0, 0, 0, 0.4))
+				// &:nth-child(2)
+				// 	.item-radio
+				// 		label
+				// 			margin-bottom: 0
+		+media-breakpoint-up(lg)
+			.list-items
+				.item
+					.img-line
+						padding-left: 2rem
+						a
+							margin-right: 1.5rem

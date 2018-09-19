@@ -4,5 +4,12 @@ block variables
 	- var description = "Description for guide page"
 	- var bodyclass = "guide"
 	- var href = "/guide.html"
+block header
+	include ../lib/header/h-7/index.pug
 block body
+	include ../lib/slider/s-1/index.pug
+	include ../lib/breadcrumb/b-4/index.pug
+	include ../lib/nav/n-1/index.pug
 	include ../lib/boxes/b-15/index.pug
+block footer
+	include ../lib/footer/f-2/index.pug

@@ -1,0 +1,120 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-support-1
+	+pad(0 0 3rem null)
+	+media-breakpoint-up(lg)
+		+pad(0 null 4rem 0)
+	.list-detail
+		.content
+			display: flex
+			align-items: baseline
+			&:first-child
+				padding-top: 0
+				&:after
+					top: -15px
+			cursor: pointer
+			position: relative
+			// padding-right: 1rem
+			border-bottom: 1px dashed color-get($mau,grey-12)
+			.trigger-icon
+				+lh(1.79rem)
+				text-align: center
+				color: color-get($mau , main)
+				margin-right: 1rem
+				span
+					+transition(all .5s ease-in-out)
+			h5
+				margin-bottom: 0
+				+fz(1.14rem)
+				+fw(500)
+				color: color-get($mau,xam-6)
+				+pad(1.5rem 0)
+				position: relative
+			&.active
+				border-bottom: 0
+				.trigger-icon
+					span
+						+transform(rotate(90deg))
+				h5
+					color: color-get($mau,main)
+					+fw(700)
+		.lead
+			color: color-get($mau,xam-6)
+			+fw(500)
+			+pad(1rem)
+			padding-top: 0
+			+fz(1rem)
+			color-get($mau,grey-12)
+			p
+				margin-bottom: 0
+	.btn-support
+		text-align: center
+	.btn-readmore
+		// +lh(45px)
+		margin-top: 3rem
+		+pad(.9rem r(55px))
+		color: darken(color-get($mau, trang),38%)
+		+fz(r(16px))
+		text-transform: uppercase
+		box-shadow: 0 0 0 1px darken(color-get($mau, trang),38%) inset
+		border-bottom: 1px solid darken(color-get($mau, trang),38%)
+		+bor-rad(0)
+		+transition(all .3s ease-in-out)
+		+media-breakpoint-up(md)
+			&:hover
+				box-shadow: 0 0 0 1px color-get($mau, main) inset
+				color: color-get($mau, main)
+				border-bottom-color: color-get($mau, main)
+	+media-breakpoint-up(lg)
+		.list-detail
+			.content
+				.trigger-icon
+					width: 1.79rem
+					height: 1.79rem
+					background: color-get($mau , main)
+					color: color-get($mau , trang)
+	// .question
+	// 	+pad(3rem)
+	// 	box-shadow: 0px 0px 10px 6px color-rgba(darken(color-get($mau,trang),20%),.3)
+	// 	+bor-rad(5px)
+	// 	.question-title
+	// 		text-align: center
+	// 		text-transform: uppercase
+	// 		+fz(1.5rem)
+	// 		color: color-get($mau,den)
+	// 		+fw(600)
+	// 	.ccrightform
+	// 		input[type="submit"]
+	// 			+pad(null 5rem)
+	// 			+fw(700)
+	// 			cursor: pointer
+	// 			&:hover
+	// 				background: -webkit-linear-gradient(93deg, #891869, #e91836)
+	// 				background: -moz-linear-gradient(93deg, #891869, #e91836)
+	// 				background:  -ms-linear-gradient(93deg, #891869, #e91836)
+	// 				background:  -o-linear-gradient(93deg, #891869, #e91836)
+	// 				background: linear-gradient(93deg, #891869, #e91836)
+	// 				border: 2px solid color-get($mau,main)
+	// 				color: color-get($mau,trang)!important
+	// 		.form-group
+	// 			display: flex
+	// 			flex-direction: column
+	// 			justify-content: center
+	// 			align-items: center
+	// 			label
+	// 				color: color-get($mau,xam-10)
+	// 				text-transform: uppercase
+	// 				+fw(500)
+	// 			.form-control
+	// 				border: 0
+	// 				+pad(.8rem null)
+	// 				background: darken(color-get($mau,trang),3%)
+	// 			textarea
+	// 				height: 140px
+	// 			input[type="reset"]
+	// 				display: none
+	// 			input[type="submit"]
+	// 				&:hover
+	// 					background: color-get($mau , main)

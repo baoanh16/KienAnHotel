@@ -331,6 +331,29 @@ header
 			+fz(1.21rem)
 			+fw(400)
 			color: color-get($mau ,trang)
+		.picker-title
+			text-align: left
+		.picker-group
+			+pad(1rem 0)
+			+box-sha(0 1px 0 0 color-get($mau , bor-3))
+			.picker-info
+				display: flex
+				justify-content: space-between
+				span
+					+fz(1.07rem)
+					color: color-get($mau , trang)
+					&.picker-title
+						color: color-get($mau , grey-8)
+					&.picker-result
+						text-align: right
+				&.sum
+					+fw(700)
+			&:first-child
+				padding-top: 0
+			&:last-child
+				box-shadow: none
+		.picker-submit
+			margin-top: 2rem
 		.picker-day
 			.input-group
 				display: flex
@@ -367,7 +390,19 @@ header
 				color: color-get($mau , trang)
 				+pad(.5rem 2.36rem)
 				+box-sha(0 0 0 1px color-get($mau , trang))
+	.list-info
+		background: color-get($mau , grey-9)
+		color: color-get($mau , xam-6)
+		+pad(1rem)
+		margin-top: 2rem
+		h4 , p
+			+fz(1.07rem)
+			margin-bottom: .5rem
+			+fw(400)
+			em
+				margin-right: 1rem
 	+media-breakpoint-up(lg)
+		+pad(4rem null)
 		.list-picker
 			margin-top: 0
 		.checkout-nav

@@ -3,10 +3,10 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-boxes-16
-	+pad(2rem 0)
+.canhcam-boxes-16,.canhcam-news-4
+	+pad(4rem 0)
 	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+		+pad(7rem 0 4rem 0)
 	.item
 		text-decoration: none
 		figure
@@ -14,7 +14,8 @@
 				overflow: hidden
 				img
 					display: block
-					margin: auto
+					// margin: auto
+					width: 100%
 			figcaption
 				+pad(1rem 0)
 				time
@@ -28,48 +29,47 @@
 					+line(3)
 					margin-bottom: 1rem
 					margin-top: .5rem
+					overflow: hidden
+					text-overflow: ellipsis
+					-webkit-line-clamp: 2
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					max-height: 4rem
 				p
 					color: darken(color-get($mau, trang),40%)
 					margin-bottom: 0
-					+line(7)
+					// +line(7)
+					overflow: hidden
+					text-overflow: ellipsis
+					-webkit-line-clamp: 4
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					max-height: 6rem
 		+media-breakpoint-up(lg)
 			figure
 				position: relative
+				// +bor-rad(5px)
 				overflow: hidden
-				.boximg
-					position: relative
-					&:after
-						content: ''
-						width: 100%
-						height: 100%
-						+pos(abs, 0 null null 0)
-						background: rgba(0,0,0,0)
-						transition: all .3s ease-in-out
-					img
-						+opacity(0)
 				figcaption
+					// text-align: center
 					+pos(abs, null null 0 0)
-					+pad(r(55px) 1.5rem)
+					+pad(1rem)
+					padding-bottom: 3rem
 					width: 100%
 					display: flex
-					align-items: center
+					// align-items: center
 					flex-direction: column
-					justify-content: center
-					transition: all .3s ease-in-out
+					// justify-content: center
 					h3
-						color: color-get($mau, trang)
+						margin-bottom: 0
+						color: color-get($mau , trang)
 					p
-						+line(7)
-						display: none
-						color: darken(color-get($mau,trang),18%)
+						// padding-top: .5rem
+						// +fz(1.07rem)
+						color: color-get($mau , grey-10)
 				&:hover
-					.boximg
-						&:after
-							background: rgba(0,0,0,.7)
 					figcaption
-						bottom: initial
-						top: 0
-						p
-							display: -webkit-box!important
+						padding-top: 3rem
+						background: color-rgba(color-get($mau , den),.7)
 	.btn-readmore
 		margin-top: calc(40px - 1rem)
