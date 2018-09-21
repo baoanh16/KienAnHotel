@@ -120,7 +120,7 @@
   <data name="ViewMoreText" xml:space="preserve">
     <value>View More</value>
   </data>
-  <data name="Price" xml:space="preserve">
+  <data name="PriceText" xml:space="preserve">
     <value>Price</value>
   </data>
   <data name="Capacity" xml:space="preserve">

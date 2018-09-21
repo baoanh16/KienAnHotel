@@ -120,7 +120,7 @@
   <data name="ViewMoreText" xml:space="preserve">
     <value>Xem Thêm</value>
   </data>
-   <data name="Price" xml:space="preserve">
+   <data name="PriceText" xml:space="preserve">
     <value>Giá</value>
   </data>
   <data name="Capacity" xml:space="preserve">
