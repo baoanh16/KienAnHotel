@@ -129,5 +129,8 @@
   <data name="Describe" xml:space="preserve">
     <value>Describe</value>
   </data>
+  <data name="ServiceOther" xml:space="preserve">
+    <value>Other services</value>
+  </data>
 
 </root>
