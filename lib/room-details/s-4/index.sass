@@ -39,9 +39,9 @@
 						&.slick-disabled
 							&:before
 								+opacity(.5)
-						&:hover 
+						&:hover
 							background: color-get($mau,main)
-							color: color-get($mau,trang)	
+							color: color-get($mau,trang)
 				+media-breakpoint-up(sm)
 					.promotion,.product-name
 						display: none
@@ -84,17 +84,22 @@
 				color: color-get($mau,main)
 				text-transform: uppercase
 				margin-bottom: r(18px)
-			.table-responsive
-				table
-					tr
-						td
-							&:first-child
-								padding-left: 0
-								+fw(700)
-						&:last-child
-							td
-								border-bottom: 1px solid #dee2e6
+			.item
+				+pad(1rem null)
+				border-bottom: 1px solid color-get($mau , bor-5)
+				align-items: center
+				.product-title
+					+fz(1.14rem)
+					+fw(700)
+					color: color-get($mau , xam-6)
+				.product-result
+					+fz(1.07rem)
+					color: color-get($mau , xam-5)
+					&.price
+						color: color-get($mau , main)
+						+fw(700)
 			.btn-wrap
+				margin-top: 1.5rem
 				margin-bottom: 1rem
 				display: inline-block
 				a.btn-buy
@@ -115,29 +120,48 @@
 			border: 0
 			padding-bottom: 1px
 			margin-bottom: 2rem
-			justify-content: center
-			border-bottom: 1px solid lighten(color-get($mau,den),10%)
+			// justify-content: center
+			+box-sha(0 2px 0 0 color-get($mau , main))
+			background: color-get($mau , grey-13)
 			a.nav-link
 				border: 0
-				+pad(1rem 1.2rem)
-				+fw(600)
-				color: darken(color-get($mau,trang),30%)
-				font-size: 1rem
+				+pad(.5rem 2.5rem)
+				+fw(700)
+				// color: color-get($mau,trang)
+				+fz(1.43rem)
 				position: relative
-				&.active,&:hover
-					color: lighten(color-get($mau,den),20%)
-					border: 0
-					&:after
-						content: ''
-						width: 60px
-						height: 3px
-						background: lighten(color-get($mau,den),20%)
-						+pos(abs,null null -2px 50%)
-						+transform(translate(-50%,-50%))
-						transition: .5s all ease-in-out
-				&.active
-					color: lighten(color-get($mau,den),20%)!important
-				&:hover
-					color: darken(color-get($mau,trang),30%)
+				+bor-rad(0)
+				text-transform: uppercase
+				+transition(all .4s ease-in-out)
+				&:hover,&.active
+					color: color-get($mau,trang)
+					background: color-get($mau,main)
 		.tab-content
 			+fw(400)
+			h4
+				+fz(1.14rem)
+				+fw(600)
+				color: color-get($mau , xam-6)
+				text-transform: uppercase
+			.item
+				display: flex
+				align-items: center
+				p
+					margin-bottom: 0
+					margin-left: 1rem
+			.content
+				margin-bottom: 1rem
+			ul
+				+pad(0)
+				+mar(0)
+				list-style-type: none
+				li
+					margin-bottom: .4rem
+					&:before
+						content: '\f111'
+						display: inline-block
+						font-family: 'Font Awesome 5 Free'
+						+fw(600)
+						+fz(.57rem)
+						color: color-get($mau , grey-10)
+						margin-right: 1rem

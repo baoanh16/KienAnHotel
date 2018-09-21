@@ -38,29 +38,129 @@ section.canhcam-shop-details-4
 								.item
 									img.img-fluid(src="./img/room/r_4.jpg", alt="")
 				.col-12.col-md-6
-					section.product-info
+					.product-info
 						h1.product-name Phòng vip
-						.table-responsive
-							table.table
-								tbody
-									tr
-										td Giá
-										td 900.000 VNĐ
-									tr
-										td Sức chứa
-										td Giường đôi
-									tr
-										td Mô tả
-										td Nội thất tiện nghi cùng một không gian ấm cúng, giúp cho quí khách những trải nghiệm tiệc vời
+						.row.item
+							.col-4
+								.product-title Giá
+							.col-8
+								.product-result.price 900.000 VNĐ
+						.row.item
+							.col-4
+								.product-title Sức chứa
+							.col-8
+								.product-result Giường đôi
+						.row.item
+							.col-4
+								.product-title Mô tả
+							.col-8
+								.product-result Nội thất tiện nghi cùng một không gian ấm cúng, giúp cho quí khách những trải nghiệm tiệc vời
+
 						.btn-wrap
 							a.btn.btn-buy(href="checkout-1.html") Đặt phòng
 				.col
-					section.product-description
+					.product-description
 						nav.nav.nav-tabs(role="tablist")
-							a#tab1-tab.nav-link.active.nav-item(data-toggle="tab" href="#tab1" role="tab" aria-controls="nav-home-tab" aria-selected="true") Mô tả
-							a#tab2-tab.nav-link.nav-item(data-toggle="tab" href="#tab2" role="tab" aria-controls="nav-profile-tab" aria-selected="false") Thông số kỹ thuật
+							a#tab1-tab.nav-link.active.nav-item(data-toggle="tab" href="#tab1" role="tab" aria-controls="nav-room-tab-1" aria-selected="true") Chi tiết phòng
+							a#tab2-tab.nav-link.nav-item(data-toggle="tab" href="#tab2" role="tab" aria-controls="nav-room-tab-2" aria-selected="false") Chi tiết phòng
 						.tab-content
-							#tab1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-home-tab")
+							#tab1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-room-tab-1")
 								.content
-									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nulla, recusandae modi consequuntur voluptas voluptatibus dolore sed repellat illo eos quos rem. Earum amet fugit quidem nostrum qui voluptatibus quae.
-							#tab2.tab-pane.fade(role="tabpanel" aria-labelledby="nav-profile-tab") Eveniet nulla, recusandae modi consequuntur voluptas voluptatibus dolore sed repellat illo eos quos rem. Earum amet fugit quidem nostrum qui voluptatibus quae.
+									h4.tab-title Tiện ích phòng
+									.row
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon1.png", alt="")
+											p Wifi Free
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon2.png", alt="")
+											p TV
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon3.png", alt="")
+											p Điện thoại gọi quốc tế
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon4.png", alt="")
+											p Bồn tắm vòi sen
+									.row
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon5.png", alt="")
+											p Máy lạnh
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon6.png", alt="")
+											p Tủ lạnh
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon7.png", alt="")
+											p Máy sáy
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon6.png", alt="")
+											p Máy giặt
+									.row
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon9.png", alt="")
+											p Ấm nước
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon10.png", alt="")
+											p Ăn sáng free
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon11.png", alt="")
+											p Két sắt
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon11.png", alt="")
+											p Nước suối , trà , nước ngọt
+								.content
+									h4.tab-title Các điều khoản và điều kiện
+									ul
+										li Giá phòng đã bao gồm ăn sáng buffet, nhưng không bao gồm 5% phí dịch vụ và 10% VAT (tùy thuộc vào chính sách giá)
+										li Miễn phí cho trẻ em dưới 5 tuổi ngủ chung giường với bố mẹ
+										li Trẻ em từ 6 đến 11 tuổi tính phí 189.000 ++ / đêm ngủ chung giường với bố mẹ
+										li Tùy thuộc vào mùa cao điểm hay thấp điểm, khách sạn có thể thay đổi giá.
+										li Trong trường hợp không có chương trình ưu đãi, giá một đêm lưu sẽ được tính phí cả ngày.
+							#tab2.tab-pane.fade(role="tabpanel" aria-labelledby="nav-room-tab-2")
+								.content
+									h4.tab-title Tiện ích phòng
+									.row
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon1.png", alt="")
+											p Wifi Free
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon2.png", alt="")
+											p TV
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon3.png", alt="")
+											p Điện thoại gọi quốc tế
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon4.png", alt="")
+											p Bồn tắm vòi sen
+									.row
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon5.png", alt="")
+											p Máy lạnh
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon6.png", alt="")
+											p Tủ lạnh
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon7.png", alt="")
+											p Máy sáy
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon6.png", alt="")
+											p Máy giặt
+									.row
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon9.png", alt="")
+											p Ấm nước
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon10.png", alt="")
+											p Ăn sáng free
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon11.png", alt="")
+											p Két sắt
+										.col-lg-3.col-6.item
+											img(src="./img/room/room_icon11.png", alt="")
+											p Nước suối , trà , nước ngọt
+								.content
+									h4.tab-title Các điều khoản và điều kiện
+									ul
+										li Giá phòng đã bao gồm ăn sáng buffet, nhưng không bao gồm 5% phí dịch vụ và 10% VAT (tùy thuộc vào chính sách giá)
+										li Miễn phí cho trẻ em dưới 5 tuổi ngủ chung giường với bố mẹ
+										li Trẻ em từ 6 đến 11 tuổi tính phí 189.000 ++ / đêm ngủ chung giường với bố mẹ
+										li Tùy thuộc vào mùa cao điểm hay thấp điểm, khách sạn có thể thay đổi giá.
+										li Trong trường hợp không có chương trình ưu đãi, giá một đêm lưu sẽ được tính phí cả ngày.

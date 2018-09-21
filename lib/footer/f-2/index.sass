@@ -43,13 +43,42 @@
 						+fz(1rem)
 		.subscribe
 			button
+				cursor: pointer
 				background: none
+				padding: 0
+				+fz(0)
+				&:after
+					content: '\f0e0'
+					font-family: 'Font Awesome 5 Free'
+					font-weight: 600
+					color: color-get($mau , trang)
+					+pos(abs, 50% 10px null null)
+					+transform(translateY(-50%))
+					+lh(33.5px)
+					+fz(1rem)
 			.form-inline
+				.Module-216
+					width: 100%
+				.subscribefrm
+					position: relative
+					span
+						+pos(abs, null null -20px 0)
+						color: red
 				.input-group
 					width: 100%
 					position: relative
 					+bor-rad(0)
 					input
+						width: 100%
+						padding: 0.375rem 0.75rem
+						font-size: 1rem
+						line-height: 1.5
+						border: 1px solid #ced4da
+						border-radius: 0.25rem
+						-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+						transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+						transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+						transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
 						border-color: color-rgba(color-get($mau, trang),.25)
 						background: color-get($mau,duong-2)
 						+bor-rad(0)
