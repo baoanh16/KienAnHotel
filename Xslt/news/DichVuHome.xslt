@@ -6,10 +6,7 @@
 	<!--Begin News-->
 	<xsl:template match="/">
 		<section class="canhcam-boxes-9">
-			<h1 class="ka-title">
-				<xsl:value-of select="/NewsList/ZoneTitle"></xsl:value-of>
-			</h1>
-			<div class="container">
+			<div class="container-fluid px-0">
 				<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 			</div>
 		</section>
@@ -24,7 +21,7 @@
 						<xsl:text>col-md-6 order-md-2</xsl:text>
 					</xsl:attribute>
 				</xsl:if>
-				<figure class="mb-0" bg-img="./img/home/h_6.jpg">
+				<figure class="mb-0">
 					<xsl:attribute name="bg-img">
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
