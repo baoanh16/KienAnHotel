@@ -47,6 +47,7 @@
 			+media-breakpoint-up(lg)
 				// +pad(0 r(55px))
 				.item
+					display: block
 					position: relative
 					&:after
 						content: ''
@@ -56,6 +57,21 @@
 						+bg-cart
 						opacity: .8
 						+transition(all .3s ease-in-out)
+					.title
+						min-width: 230px
+						position: absolute
+						bottom: 0
+						left: 50%
+						background: #ffffff
+						transform: translateX(-50%)
+						h3
+							line-height: 2.8571428571rem
+							font-size: 1.2857142857rem
+							font-weight: 700
+							text-transform: uppercase
+							text-align: center
+							margin-bottom: 0
+							color: #000000
 				&.center
 					.item
 						&:after
