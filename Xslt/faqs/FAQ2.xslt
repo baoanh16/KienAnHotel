@@ -16,19 +16,34 @@
 	</FAQsList>-->
 
 	<xsl:template match="/">
-		<section class="canhcam-support-1">
-			<article class="support-lists">
-				<div class="container">
-					<div class="list-detail">
+		<section class="canhcam-boxes-15">
+			<div class="container">
+				<div class="row">
+					<ul class="timeline">
 						<xsl:apply-templates select="/FAQsList/FAQs"></xsl:apply-templates>
-					</div>
+					</ul>
 				</div>
-			</article>
+			</div>
 		</section>
 	</xsl:template>
 
 	<xsl:template match="FAQs">
-		<div class="item">
+		<li class="timeline-item">
+			<div class="timeline-number">
+				<xsl:value-of select="position()"></xsl:value-of>
+			</div>
+			<div class="timeline-info">
+				<h3 class="timeline-title">
+					<xsl:value-of select="Question" disable-output-escaping="yes"></xsl:value-of>
+					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+				</h3>
+			</div>
+			<div class="timeline-marker"></div>
+			<div class="timeline-content">
+				<xsl:value-of select="Answer" disable-output-escaping="yes"></xsl:value-of>
+			</div>
+		</li>
+		<!-- <div class="item">
 
 			<div class="content">
 				<div class="trigger-icon"><span class="fas fa-chevron-right"></span></div>
@@ -44,6 +59,6 @@
 					</figcaption>
 				</figure>
 			</div>
-		</div>
+		</div> -->
 	</xsl:template>
 </xsl:stylesheet>
