@@ -14,20 +14,24 @@
 			button
 				&.owl-prev, &.owl-next
 					+pad(0)
-					width: r(60px)
-					height: r(60px)
+					width: r(30px)
+					height: r(30px)
+					+lh(r(30px))
 					border: 1px solid color-get($mau, main)
 					color: color-get($mau, main)
 					+bor-rad(50%)
-					+fz(32px)
+					+fz(2.29rem)
 					text-align: center
+
 					&:focus
 						outline: none
-			+media-breakpoint-up(lg)
+			+media-breakpoint-up(md)
 				margin-top: 0
 				+transition(all .3s ease-in-out)
 				button
 					&.owl-prev, &.owl-next
+						width: r(60px)
+						height: r(60px)
 						margin: 0
 						border: 1px solid color-get($mau, trang)
 						color: color-get($mau, trang)
@@ -39,11 +43,24 @@
 								color: color-get($mau, main)
 					&.owl-prev
 						+pos(abs, 50% null null null)
-						left: -50px
+						left: 5%
 					&.owl-next
 						+pos(abs, 50% null null null)
-						right: -50px
+						right: 5%
+			+media-breakpoint-up(lg)
+				button
+					&.owl-prev
+						left: -5%
+					&.owl-next
+						right: -5%
 		.owl-item
+			.item
+				text-decoration: none
+				.title
+					text-align: center
+					padding-top: 1rem
+					h3
+						+fz(1.5rem)
 			+media-breakpoint-up(lg)
 				// +pad(0 r(55px))
 				.item
@@ -58,12 +75,11 @@
 						opacity: .8
 						+transition(all .3s ease-in-out)
 					.title
+						padding-top: 0
 						min-width: 230px
-						position: absolute
-						bottom: 0
-						left: 50%
-						background: #ffffff
-						transform: translateX(-50%)
+						+pos(abs , null null 0 50%)
+						+transform(translateX(-50%))
+						background: color-get($mau , trang)
 						h3
 							line-height: 2.8571428571rem
 							font-size: 1.2857142857rem
@@ -72,6 +88,7 @@
 							text-align: center
 							margin-bottom: 0
 							color: #000000
+
 				&.center
 					.item
 						&:after
