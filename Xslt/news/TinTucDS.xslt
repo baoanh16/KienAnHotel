@@ -6,6 +6,9 @@
 	<section class="canhcam-news-4">
 		<article class="news-hot">
 			<div class="container">
+				<h1 class="ka-title">
+					<xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>
+				</h1>
 				<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 			</div>
 		</article>
@@ -21,9 +24,9 @@
 		<xsl:text disable-output-escaping="yes">&lt;div class="row"&gt;</xsl:text>
 	</xsl:if>
 
-	
+
 	<xsl:if test="position() &gt; 0 and  position() &lt; 4 ">
-		
+
 		<div class="col-lg-4">
 			<a class="item">
 				<xsl:attribute name="href">
@@ -128,7 +131,7 @@
 		</div>
 	</xsl:if>
 	<xsl:if test="position() &gt; 5 and  position() &lt; 9 ">
-		
+
 		<div class="col-lg-4">
 			<a class="item">
 				<xsl:attribute name="href">

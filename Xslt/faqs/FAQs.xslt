@@ -22,6 +22,11 @@
 					<div class="list-detail">
 						<xsl:apply-templates select="/FAQsList/FAQs"></xsl:apply-templates>
 					</div>
+					<p class="btn-support">
+						<a class="btn btn-readmore" href="">
+							<xsl:value-of select="/FAQsList/SendQ" />
+						</a>
+					</p>
 				</div>
 			</article>
 		</section>

@@ -135,4 +135,7 @@
   <data name="PromotionOther" xml:space="preserve">
     <value>Khuyến mãi khác</value>
   </data>
+  <data name="SendQ" xml:space="preserve">
+    <value>Gửi câu hỏi</value>
+  </data>
 </root>

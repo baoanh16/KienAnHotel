@@ -135,4 +135,7 @@
    <data name="PromotionOther" xml:space="preserve">
     <value>Other promotions</value>
   </data>
+  <data name="SendQ" xml:space="preserve">
+    <value>Send Question</value>
+  </data>
 </root>

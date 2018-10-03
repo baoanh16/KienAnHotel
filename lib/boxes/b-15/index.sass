@@ -81,15 +81,16 @@
 				&:after
 					content: ""
 					width: 2px
-					background: color-get($mau, main)
+					// background: color-get($mau, main)
 					display: block
 					position: absolute
 					top: 24px
 					bottom: -10px
 					left: -1px
 					z-index: -9999
+					border: 1px dashed color-get($mau, main)
 			.timeline-content
-				padding-bottom: 2rem
+				padding-bottom: 1rem
 				p:last-child
 					margin-bottom: 0
 				.timeline-title
@@ -104,10 +105,10 @@
 					color
 					span
 						+fw(500)
-				.list-item
+				ul
 					list-style-type: none
 					padding-left: 1.5rem
-					.item
+					li
 						position: relative
 						padding-bottom: .8rem
 						&:before
@@ -120,6 +121,8 @@
 							border-radius: 50px
 							top: 5px
 							left: -21px
+						&:last-child
+							padding-bottom: 0
 			&:last-child
 				padding-bottom: 0
 				.timeline-marker
