@@ -36,3 +36,22 @@ header.canhcam-header-7
 				.wrap.d-flex
 					span.far.fa-edit
 					p.mb-0 ĐẶT PHÒNG
+		.ka-modal#ka-modal
+			.input-daterange
+				.input-group
+					label Ngày đến
+					input.form-control(type='text', value='2012-04-05')
+					span.mdi.mdi-calendar
+				.input-group
+					label Ngày đi
+					input.form-control(type='text', value='2012-04-19')
+					span.mdi.mdi-calendar
+			.select-room
+				select.js-example-basic-single(name='state')
+					option(selected) Chọn loại phòng
+					option Phòng vip
+					option Phòng thường
+					option Phòng đẹp
+			.submit-btn
+				input(type="submit", value="Đặt phòng")
+

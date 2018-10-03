@@ -8,7 +8,7 @@
 	<xsl:template match="Zone">
 		<xsl:choose>
 			<xsl:when test="position()=1">
-				<section class="canhcam-boxes-2">
+				<section class="canhcam-boxes-2" bg-img="/Data/Sites/1/media/about_all_bg.jpg">
 					<div class="container">
 						<h2 class="ka-title">
 							<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>

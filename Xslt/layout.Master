@@ -136,6 +136,26 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 					<asp:ContentPlaceHolder ID="rightContent" runat="server">
 					</asp:ContentPlaceHolder>
 				</asp:Panel>
+				<section class="canhcam-boxes-19">
+					<article class="box-lists">
+						<div class="container">
+							<div class="row list-items">
+								<div class="col-6 col-lg-3 item"><img src="/Data/Sites/1/media/ico_1.png" alt="">
+									<h2>Giá tốt mỗi ngày</h2>
+								</div>
+								<div class="col-6 col-lg-3 item"><img src="/Data/Sites/1/media/ico_2.png" alt="">
+									<h2>Thanh toán sau khi<br>nhận phòng</h2>
+								</div>
+								<div class="col-6 col-lg-3 item"><img src="/Data/Sites/1/media/ico_3.png" alt="">
+									<h2>Phục vụ toàn diện</h2>
+								</div>
+								<div class="col-6 col-lg-3 item"><img src="/Data/Sites/1/media/ico_4.png" alt="">
+									<h2>Giảm giá hấp dẫn</h2>
+								</div>
+							</div>
+						</div>
+					</article>
+				</section>
 			</main>
 			<!-- ////////////// End Main ////////////// -->
 			<!-- ////////////// Footer ////////////// -->

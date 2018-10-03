@@ -4,7 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="canhcam-boxes-1">
+		<section class="canhcam-boxes-1" bg-img="/Data/Sites/1/media/news_home_bg.jpg">
 			<div class="container">
 				<h2 class="ka-title">
 					<xsl:value-of select="/VideoList/ModuleTitle"></xsl:value-of>

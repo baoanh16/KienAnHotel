@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt"
-    exclude-result-prefixes="msxsl">
+ exclude-result-prefixes="msxsl">
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
@@ -11,9 +11,9 @@
 					<div class="row">
 						<div class="col-lg-9">
 							<div class="news-read">
-								<time>
+								<!-- <time>
 									<xsl:value-of select="/NewsDetail/CreatedDate"></xsl:value-of>
-								</time>
+								</time> -->
 								<h1>
 									<xsl:value-of select="/NewsDetail/Title"></xsl:value-of>
 								</h1>
@@ -23,16 +23,16 @@
 								</div>
 								<div class="social-networks nav mt-3">
 									<div class="nav-item">
-										<div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true">
-											<a class="fb-xfbml-parse-ignore" target="_blank" href="">Chia sẻ</a>
+										<div class="g-plusone" data-size="tall" data-annotation="inline"></div>
+									</div>
+									<div class="nav-item">
+										<div class="fb-share-button" data-href="" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+											<a target="_blank" href="" class="fb-xfbml-parse-ignore">Chia sẻ</a>
 										</div>
 									</div>
 									<div class="nav-item">
-										<a class="twitter-share-button" href="https://twitter.com/share" data-size="medium" data-text="custom share text" data-url=""
-											data-via="twitterdev" data-related="twitterapi,twitter">Tweet</a>
-									</div>
-									<div class="nav-item">
-										<div class="g-plusone" data-size="tall"></div>
+										<a class="twitter-share-button" href="https://twitter.com/share" data-size="medium" data-text="custom share text"
+										 data-url="" data-via="twitterdev" data-related="twitterapi,twitter">Tweet</a>
 									</div>
 									<div class="nav-item">
 										<script src="//platform.linkedin.com/in.js" type="text/javascript">
@@ -78,25 +78,28 @@
 			<figure>
 				<div class="img">
 					<img>
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
+					<xsl:attribute name="src">
+						<xsl:value-of select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="alt">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
 					</img>
 				</div>
 
 				<figcaption>
-					<time>
+					<!-- <time>
 						<xsl:value-of select="/NewsDetail/CreatedDate"></xsl:value-of>
-					</time>
+					</time> -->
 					<h3>
 						<xsl:attribute name="title">
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
 						<xsl:value-of select="Title"></xsl:value-of>
 					</h3>
+					<p>
+						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+					</p>
 				</figcaption>
 			</figure>
 		</a>

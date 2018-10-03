@@ -132,4 +132,7 @@
   <data name="ServiceOther" xml:space="preserve">
     <value>Dịch vụ khác</value>
   </data>
+  <data name="PromotionOther" xml:space="preserve">
+    <value>Khuyến mãi khác</value>
+  </data>
 </root>

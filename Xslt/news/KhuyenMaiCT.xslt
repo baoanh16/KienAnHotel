@@ -23,6 +23,9 @@
 								</div>
 								<div class="social-networks nav mt-3">
 									<div class="nav-item">
+										<div class="g-plusone" data-size="tall"></div>
+									</div>
+									<div class="nav-item">
 										<div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true">
 											<a class="fb-xfbml-parse-ignore" target="_blank" href="">Chia sẻ</a>
 										</div>
@@ -30,9 +33,6 @@
 									<div class="nav-item">
 										<a class="twitter-share-button" href="https://twitter.com/share" data-size="medium" data-text="custom share text" data-url=""
 											data-via="twitterdev" data-related="twitterapi,twitter">Tweet</a>
-									</div>
-									<div class="nav-item">
-										<div class="g-plusone" data-size="tall"></div>
 									</div>
 									<div class="nav-item">
 										<script src="//platform.linkedin.com/in.js" type="text/javascript">
@@ -48,7 +48,7 @@
 							<div class="othernews" data-fix="10" data-fix-type="initial" data-fix-change="sticky">
 								<div class="h2-text">
 									<h2>
-										<xsl:value-of select="/NewsDetail/NewsOtherText"></xsl:value-of>
+										<xsl:value-of select="/NewsDetail/PromotionOther" />
 									</h2>
 								</div>
 								<div class="lists">

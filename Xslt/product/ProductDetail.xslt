@@ -63,6 +63,27 @@
 									</div>
 								</div>
 							</div>
+							<div class="social-networks nav mt-3">
+								<div class="nav-item mr-2">
+									<div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true">
+										<a class="fb-xfbml-parse-ignore" target="_blank" href="">Chia sẻ</a>
+									</div>
+								</div>
+								<div class="nav-item mr-2">
+									<a class="twitter-share-button" href="https://twitter.com/share" data-size="medium" data-text="custom share text"
+									 data-url="" data-via="twitterdev" data-related="twitterapi,twitter">Tweet</a>
+								</div>
+								<div class="nav-item mr-2">
+									<div class="g-plusone" data-size="tall"></div>
+								</div>
+								<div class="nav-item">
+									<script src="//platform.linkedin.com/in.js" type="text/javascript">
+										lang: en_US
+
+									</script>
+									<script type="IN/Share"></script>
+								</div>
+							</div>
 						</div>
 						<div class="col">
 							<div class="product-description">
@@ -86,24 +107,8 @@
 					<xsl:value-of select="ImageUrl"></xsl:value-of>
 				</xsl:attribute>
 				<img class="img-fluid">
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-					</xsl:attribute>
-				</img>
-			</a>
-		</div>
-	</xsl:template>
-	<xsl:template match="ProductImages" mode="SmallImages">
-		<div class="item">
-			<img class="img-fluid">
 				<xsl:attribute name="src">
-					<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
+					<xsl:value-of select="ImageUrl"></xsl:value-of>
 				</xsl:attribute>
 				<xsl:attribute name="alt">
 					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
@@ -111,6 +116,22 @@
 				<xsl:attribute name="title">
 					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 				</xsl:attribute>
+				</img>
+			</a>
+		</div>
+	</xsl:template>
+	<xsl:template match="ProductImages" mode="SmallImages">
+		<div class="item">
+			<img class="img-fluid">
+			<xsl:attribute name="src">
+				<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
+			</xsl:attribute>
+			<xsl:attribute name="alt">
+				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+			</xsl:attribute>
+			<xsl:attribute name="title">
+				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+			</xsl:attribute>
 			</img>
 		</div>
 	</xsl:template>
@@ -153,7 +174,7 @@
 				<xsl:text>tabpanel</xsl:text>
 			</xsl:attribute>
 			<xsl:attribute name="aria-labelledby">
-			<xsl:text>nav-room-tab-</xsl:text>
+				<xsl:text>nav-room-tab-</xsl:text>
 				<xsl:value-of select="position()"></xsl:value-of>
 			</xsl:attribute>
 			<xsl:value-of select="Content" disable-output-escaping="yes"></xsl:value-of>

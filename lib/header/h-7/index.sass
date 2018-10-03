@@ -7,9 +7,11 @@
 	background: color-get($mau,trang)
 	// border-bottom: 1px solid darken(color-get($mau,trang),20%)
 	+box-sha(0 1px 0 0 darken(color-get($mau, trang),10%))
+
 	.navbar
 		align-items: center
 		+pad(0 null)
+		position: relative
 		.title
 			order: 0
 			display: none
@@ -62,6 +64,7 @@
 	.cart-toggle
 		height: 52px
 		+pad(null 1.65rem)
+		position: relative
 		+bg-cart
 		.wrap
 			height: 100%
@@ -75,6 +78,83 @@
 				max-width: 3.5rem
 				+fz(1.05rem)
 				+fw(700)
+	.ka-modal
+		+pos(abs , null 4.5rem -20.5rem null)
+		background: color-get($mau , main)
+		+pad(2rem 1.5rem 2rem 1.5rem)
+		visibility: hidden
+		backface-visibility: hidden
+		+transform(translateY(20%))
+		opacity: 0
+		+transition(all .3s ease-in-out)
+		.input-daterange
+			display: flex
+			flex-direction: column
+			.input-group
+				+box-sha(0 1px 0 0 color-get($mau , bor-6))
+				margin-bottom: 2rem
+				input
+					background: none
+					border: none
+					+bor-rad(0)
+					color: color-get($mau , trang)
+					text-align: left
+				label
+					+pos(abs , 0 null null .75rem)
+					+mar(0)
+					+lh(31.5px)
+					color: color-rgba(color-get($mau , trang) , .67)
+					+transition(all .3s ease-in-out)
+				span
+					+pos(abs , 0 .75rem null null)
+					+lh(31.5px)
+					color: color-get($mau , bor-7)
+				&.active
+					label
+						top: -25px
+						+transform(scale(.9))
+		.select-room
+			margin-bottom: 2rem
+			.select2-container
+				width: 100%!important
+				.select2-selection
+					background: none
+					color: color-get($mau , trang)
+					+box-sha(0 1px 0 0 color-get($mau , bor-6))
+					border: none
+					.select2-selection__rendered
+						color: color-get($mau , trang)
+					.select2-selection__arrow
+						b
+							border-color: color-get($mau , trang) transparent transparent transparent
+				.select2-container--open
+					a
+						border-color: transparent transparent color-get($mau , trang) transparent
+		.submit-btn
+			background: #d34e0e
+			color: color-get($mau , trang)
+			text-align: center
+			+pad(.5rem null)
+			cursor: pointer
+			input
+				background: none
+				border: none
+				color: color-get($mau , trang)
+				text-transform: uppercase
+				cursor: pointer
+		&:before
+			content: ''
+			display: block
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 0 10px 10px 10px
+			border-color: transparent transparent color-get($mau , main) transparent
+			+pos(abs , -.71rem 4.57rem null null)
+		&.active
+			+transform(translateY(0))
+			opacity: 1
+			visibility: visible
 	+media-breakpoint-down(sm)
 		.navbar-collapse
 			display: flex
@@ -107,6 +187,9 @@
 			+pos(fix, 0 0 null null)
 			z-index: 999
 	+media-breakpoint-up(md)
+		.ka-modal
+			right: 15px
+			width: 21.43rem
 		.cart-toggle
 			+pad(null 1rem)
 			height: 60px

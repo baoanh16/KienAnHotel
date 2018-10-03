@@ -88,15 +88,30 @@ header
 				+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
 
 .pagination
-	.page-item
-		.page-link
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 2rem
+	li
+		width: 2.14rem
+		height: 2.14rem
+		text-align: center
+		+lh(2.14rem)
+		background: #cccccc
+		margin-right: 0.5rem
+		a , span
+			color: color-get($mau , trang)
 			&:focus
 				+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
+		&:last-child
+			margin-right: 0
 		&.active
-			.page-link
-				background: color-get($mau,main)
+			background: color-get($mau,main)
+			a , span
 				border-color: color-get($mau,main)
 				color: color-get($mau,trang)
+	+media-breakpoint-up(lg)
+		margin-bottom: 4rem
 .dropdown-item.active, .dropdown-item:active
 	background: color-get($mau,main)
 
