@@ -23,11 +23,11 @@
 				</xsl:if>
 				<figure class="mb-0">
 					<xsl:attribute name="bg-img">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
+						<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
 					</xsl:attribute>
 					<img class="img-fluid">
 					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
+						<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
 					</xsl:attribute>
 					<xsl:attribute name="alt">
 						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>

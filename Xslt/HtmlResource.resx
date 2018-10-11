@@ -138,4 +138,7 @@
   <data name="SendQ" xml:space="preserve">
     <value>Send Question</value>
   </data>
+  <data name="UrlText" xml:space="preserve">
+    <value>http://preview6266.canhcam.com.vn/tin-tuc</value>
+  </data>
 </root>
