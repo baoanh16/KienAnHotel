@@ -17,7 +17,8 @@
                 "support/s-3"
             ],
             "footer": [
-                "footer/f-2"
+                "footer/f-2",
+                "footer/form/f-1"
             ]
         },
         "about": {

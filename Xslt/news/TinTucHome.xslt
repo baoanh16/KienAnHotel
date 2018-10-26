@@ -13,9 +13,9 @@
 				<div class="row">
 					<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
 					<div class="col-auto mx-auto">
-						<a class="btn btn-readmore" href="#">
+						<a class="btn btn-readmore">
 							<xsl:attribute name="href">
-								<xsl:value-of select="/NewsList/Url"></xsl:value-of>
+								<xsl:value-of select="/NewsList/UrlText"></xsl:value-of>
 							</xsl:attribute>
 							<xsl:attribute name="target">
 								<xsl:value-of select="Target"></xsl:value-of>

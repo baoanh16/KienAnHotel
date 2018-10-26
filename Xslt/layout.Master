@@ -86,9 +86,7 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 					<a class="navbar-brand d-md-none mr-auto" href="#">
 						<portal:ModuleWrapper ID="mdl208" runat="server" ConfigureModuleId="208" />
 					</a>
-					<div id="cart-toggle">
-
-					</div>
+					<div id="cart-toggle"></div>
 					<button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#CCMenuHeader" aria-controls="CCMenuHeader"
 					 aria-expanded="false" aria-label="Toggle navigation">
 						<span class="mdi mdi-menu">
@@ -104,14 +102,14 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 						</div>
 						<portal:ModuleWrapper ID="mdl209" runat="server" ConfigureModuleId="209" />
 						<portal:ModuleWrapper ID="mdl210" runat="server" ConfigureModuleId="210" />
-						<div class="cart-toggle" k-menu-map-to="#cart-toggle">
-							<div class="wrap d-flex"><span class="far fa-edit">
-
-								</span>
-								<p class="mb-0">ĐẶT PHÒNG</p>
-							</div>
+						<div class="cart-toggle d-flex justify-content-center align-items-center" k-menu-map-to="#cart-toggle">
+							<portal:ModuleWrapper ID="mdl283" runat="server" ConfigureModuleId="283" />
 						</div>
+
+
 					</div>
+					<portal:ModuleWrapper ID="mdl284" runat="server" ConfigureModuleId="284" />
+
 				</nav>
 				<!-- <portal:SiteLogo ID="SiteLogo1" runat="server" />
 					<portal:SearchInput ID="SearchInput1" CssClass="search" runat="server" />
@@ -200,7 +198,7 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 							</div>
 							<div class="col-lg social">
 
-									<portal:ModuleWrapper ID="mdl218" runat="server" ConfigureModuleId="218" />
+								<portal:ModuleWrapper ID="mdl218" runat="server" ConfigureModuleId="218" />
 							</div>
 						</div>
 					</div>
@@ -249,6 +247,8 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 	<script src="/Data/Sites/1/skins/default/js/core.js?v=1.0.0"></script>
 	<script src="/Data/Sites/1/skins/default/js/plugins.js?v=1.0.0"></script>
 	<script src="/Data/Sites/1/skins/default/js/app.js?v=1.0.0"></script>
+	<script src="/Data/Sites/1/skins/default/js/ecommerce.js?v=1.0.0"></script>
+	<script src="/Data/Sites/1/skins/default/js/custom.js?v=1.0.0"></script>
 	<script type="text/javascript">
 		function HideToolbar() {
 			$(".cmsadminpanel").addClass("toggled"), $(".fa-chevron-circle-right").addClass("fa-rotate-180")
